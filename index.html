@@ -24,24 +24,139 @@
 </head>
 
 <body class="about-page">
-	<header>
+	<!-- <header>
+		<div>
+			<img src="" alt="logo">
+			<button type="button" class="btn btn-primary button-semi">SIGN IN</button>
+		</div>
+		<div class="steps">
 
-	</header>
+		</div>
+	</header> -->
 	<main>
-		<h1>Instant Quotes with Easy Booking</h1>
-		<div class="select">
-			<select class="form-select" aria-label="Default select example">
-				<option selected>Open this select menu</option>
-				<option value="1">One</option>
-				<option value="2">Two</option>
-				<option value="3">Three</option>
-			</select>
-			<select class="form-select" aria-label="Default select example">
-				<option selected>Open this select menu</option>
-				<option value="1">One</option>
-				<option value="2">Two</option>
-				<option value="3">Three</option>
-			  </select>
+		<div class="easy-booking">
+			<h1>Instant Quotes with Easy Booking</h1>
+			<!--------------------------------- select items -------------------------------->
+			<div class="select-items">
+				<div class="select-item">
+					<label class="large">Pickup From</label>
+					<select class="form-control" id="Select1">
+						<option selected>Ex. United Kingdom</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select>
+				</div>
+				<div class="select-item">
+					<label class="large">Delivery To</label>
+					<select class="form-control" id="Select2">
+						<option selected>Open this select menu</option>
+						<option value="1">One</option>
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+					</select>
+				</div>
+			</div>
+			<!-------------------------------  cards --------------------------------- -->
+			<div class="cards">
+				<div class="card-pick">
+					<div>
+						<h4>Small Box or Suitcase</h4>
+						<div class="placeholder">Max billable weight 25lbs or 12kg</div>
+					</div>
+					<div>
+						<span class="label1">Quantity</span>
+						<select class="form-select" aria-label="Default select">
+							<option selected class="label2">1</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+				</div>
+				<div class="card-pick">
+					<div>
+						<h4>Large Box or Suitcase</h4>
+						<div class="placeholder">Max billable weight 50lbs or 25kg</div>
+					</div>
+					<div>
+						<span class="label1">Quantity</span>
+						<select class="form-select" aria-label="Default select">
+							<option selected class="label2">0</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+				</div>
+				<div class="card-pick">
+					<div>
+						<h4>Bulky Box or Suitcase</h4>
+						<div class="placeholder">Max billable weight 75lbs or 34kg</div>
+					</div>
+					<div>
+						<span class="label1">Quantity</span>
+						<select class="form-select" aria-label="Default select">
+							<option selected class="label2">1</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------------------------  end Easy booking ----------------------------- -->
+		<button type="button" class="btn btn-primary button-med">GET PRICES</button>
+		<div class="recent-booking">
+			<h1>Recent Bookings</h1>
+			<div class="cards">
+				<div class="card1">
+					<h2>El Paso</h2>
+					<p class="medium">Houston, TX to El Paso, TX</p>
+					<p class="medium">4 business days</p>
+					<div>
+						<div>
+							<span class="button-semi">PRICE</span>
+							<p class="large">$29.99</p>
+						</div>
+						<div>
+							<span class="button-semi">BOXS</span>
+							<p class="large">1 Box</p>
+						</div>	
+					</div>
+				</div>
+				<div class="card2">
+					<h2>El Paso</h2>
+					<p class="medium">Houston, TX to El Paso, TX</p>
+					<p class="medium">5 business days</p>
+					<div>
+						<div>
+							<span class="button-semi">PRICE</span>
+							<p class="large">$92.99</p>
+						</div>
+						<div>
+							<span class="button-semi">BOXS</span>
+							<p class="large">4 Bags</p>
+						</div>	
+					</div>
+				</div>
+				<div class="card3">
+					<h2>Bedford, NH</h2>
+					<p class="medium">Clarksburg, MD to Bedford, NH</p>
+					<p class="medium">5 business days</p>
+					<div>
+						<div>
+							<span class="button-semi">PRICE</span>
+							<p class="large">$34.99</p>
+						</div>
+						<div>
+							<span class="button-semi">BOXS</span>
+							<p class="large">2 Bags</p>
+						</div>	
+					</div>
+				</div>
+			</div>
 		</div>
 	</main>
 	<!-- Plugins

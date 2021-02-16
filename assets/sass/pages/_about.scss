@@ -1,0 +1,27 @@
+.about-page {
+    position: relative;
+    background: #FBFDFF;
+    display: flex;
+    justify-content: center;
+    *{
+        border: 1px solid;
+    }
+    
+    main { 
+        width: 100%;
+        max-width: 1440px;
+        margin: 55px 99px;
+        .select-items {
+            display: flex;
+            justify-content: space-between;
+            .select-item {
+                width: 44%;
+                select {
+                    max-width: 606px;
+                    width: 100%;
+                }
+            }
+            margin-bottom: 40px;
+        }
+    }
+}

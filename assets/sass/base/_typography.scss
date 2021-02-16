@@ -69,45 +69,43 @@ h5 {
 }
 .button-semi {
 	font-family: $primary-semibold;
-	font-size: $font-size-re;
-	font-weight: 500;
+	font-size: $font-size-sm;
+	font-weight: 600;
 	line-height: 1.2;
 	letter-spacing: 1px;
 	text-align: left;
-	color: $white;
-	// text-align: center;
 }
-
 // a {
 // 	// @include font-source-sans($primary-bold, $font-size-xl, $color-primary-1, bold, line-height);
 // }
 
-p {
+
+.x-large {
+	font-family: $primary-medium;
+	font-size: $font-size-lg;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	text-align: left;
 	line-height: 1.6;
-	&.x-large {
-		font-family: $primary-medium;
-		font-size: $font-size-lg;
-		font-weight: 500;
-		letter-spacing: 0.5px;
-		text-align: left;
-		color: $black;	
-	}
-	&.large {
-		font-family: $primary-semibold;
-		font-size: $font-size-re;
-		font-weight: 600;
-		letter-spacing: 0.5px;
-		text-align: left;
-		color: $dark-slate-blue;
-	}
-	&.medium {
-		font-family: $primary-medium;
-		font-size: $font-size-re;
-		font-weight: 500;
-		letter-spacing: 0.5px;
-		text-align: left;
-		color: $dusk;
-	}
+	color: $black;	
+}
+.large {
+	font-family: $primary-semibold;
+	font-size: $font-size-re;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	text-align: left;
+	line-height: 1.6;
+	color: $dark-slate-blue;
+}
+.medium {
+	font-family: $primary-medium;
+	font-size: $font-size-re;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	text-align: left;
+	line-height: 1.6;
+	color: $dusk;
 }
 
 .label1 {

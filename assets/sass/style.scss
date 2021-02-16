@@ -14,11 +14,11 @@
 // 4 - Components;
 @import "components/buttons";
 @import "components/inputs";
-
+@import "components/card";
 // 5 - Layout;
 @import "layout/header";
 @import "layout/navbar";
 @import "layout/footer";
 
 // 6 - Pages;
-// @import 'pages/';
+@import 'pages/about';

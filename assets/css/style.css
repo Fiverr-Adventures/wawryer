@@ -8188,42 +8188,40 @@ h5 {
 
 .button-semi {
   font-family: "Manrope SemiBold";
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 600;
   line-height: 1.2;
   letter-spacing: 1px;
   text-align: left;
-  color: #ffffff;
 }
 
-p {
-  line-height: 1.6;
-}
-
-p.x-large {
+.x-large {
   font-family: "Manrope Medium";
   font-size: 24px;
   font-weight: 500;
   letter-spacing: 0.5px;
   text-align: left;
+  line-height: 1.6;
   color: #000000;
 }
 
-p.large {
+.large {
   font-family: "Manrope SemiBold";
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.5px;
   text-align: left;
+  line-height: 1.6;
   color: #27225f;
 }
 
-p.medium {
+.medium {
   font-family: "Manrope Medium";
   font-size: 16px;
   font-weight: 500;
   letter-spacing: 0.5px;
   text-align: left;
+  line-height: 1.6;
   color: #575482;
 }
 
@@ -8290,5 +8288,37 @@ p.medium {
     font-size: 14px;
     line-height: 1.6;
   }
+}
+
+.about-page {
+  position: relative;
+  background: #FBFDFF;
+  display: flex;
+  justify-content: center;
+}
+
+.about-page * {
+  border: 1px solid;
+}
+
+.about-page main {
+  width: 100%;
+  max-width: 1440px;
+  margin: 55px 99px;
+}
+
+.about-page main .select-items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.about-page main .select-items .select-item {
+  width: 44%;
+}
+
+.about-page main .select-items .select-item select {
+  max-width: 606px;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
