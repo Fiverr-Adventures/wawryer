@@ -2,15 +2,19 @@
     position: relative;
     background: #FBFDFF;
     @include flex (center, flex-start);
-    
     main { 
         width: 100%;
         max-width: 1440px;
-        margin: 55px 99px;
-        border: 1px solid;
+        margin: 55px 150px;
         display: flex;
         flex-direction: column;
+        select {
+            padding: 12px 16px;
+            height: 46px;
+        }
+        .cards { @include flex (space-between, flex-start) }
         .easy-booking {
+            h1 { margin-bottom: 33px }
            .select-items {
                 @include flex (space-between, flex-start);
                 margin-bottom: 40px;
@@ -18,14 +22,39 @@
                     width: 47.5%;
                 }
             }
-            .cards {
-                @include flex (space-between, flex-start);
-            }
         }
         .recent-booking {
-            .cards {
-                @include flex (space-between, flex-start);
-            }
+            margin-top: 60px;
+            h1 { margin-bottom: 26px }
         }
+        /*******************************   tablet-landscape-down   *************************************/
+        @include for-size(tablet-landscape-down) {
+            @include for-size(tablet-portrait-down) {
+                margin: 70px 80px;
+            }
+            .cards { flex-direction: column }
+            padding: 12px 16px;
+            height: 46px;
+            .easy-booking {
+                h1 { margin-bottom: 30px }
+               .select-items {
+                    margin-bottom: 30px;
+                    @include not-last-child('.select-item') {
+                        margin-bottom: 16px;
+                    }
+                    flex-direction: column;
+                    .select-item {
+                        width: 100% ;
+                    }
+                }
+            }
+              .recent-booking {
+                    margin-top: 30px;
+                    h1 { margin-bottom: 20px }
+                }
+        }
+        @include for-size(phone-only) {
+            margin: 70px 20px;
+         }
     }
 }

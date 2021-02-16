@@ -1,0 +1,6 @@
+.cards { @include flex (space-between, flex-start) }
+
+     /*******************************   tablet-landscape-down   *************************************/
+     @include for-size(tablet-landscape-down) {
+        .cards { flex-direction: column }
+    }

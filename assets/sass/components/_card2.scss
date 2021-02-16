@@ -1,7 +1,46 @@
-.card-booking {
-    background: #FFFFFF;
-    border: 1px solid #E7E7ED;
-    box-sizing: border-box;
-    border-radius: 6px;
-    
+
+.cards {
+    @include for-size(tablet-landscape-down) {
+       .card-booking {
+           margin-bottom: 26px;
+       }
+       &:last-child {
+            margin-bottom: 30px;
+        }
+    }  
+    .card-booking {
+            width: 30%;
+            background: #FFFFFF;
+            border: 1px solid #E7E7ED;
+            box-sizing: border-box;
+            border-radius: 6px;
+        .book-content {
+            padding: 28px 60px 0px 23px;
+            .book-period {
+                @include flex(flex-start, center);
+                    margin-bottom: 22px;
+                    margin-top: 22px;
+                img {
+                    margin-right: 8px;
+                }
+            }
+            p {
+                margin-bottom: 0;
+            }
+        }
+        .book-footer {
+            @include flex(space-between, center);
+                padding: 0 60px 0 23px;
+                background: #F9F9FC;
+                border-top: 1px solid #E7E7ED;
+                box-sizing: border-box;
+                border-radius: 0px 0px 6px 6px;
+                width: 100%;
+        }
+
+        /*****************************  tablet-landscape-down ***************************** */
+        @include for-size(tablet-landscape-down) {
+            width: 100%;
+        } 
+    } 
 }

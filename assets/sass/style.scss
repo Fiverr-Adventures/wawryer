@@ -16,6 +16,7 @@
 @import "components/inputs";
 @import "components/card1";
 @import "components/card2";
+@import "components/card3";
 // 5 - Layout;
 @import "layout/header";
 @import "layout/navbar";
@@ -23,3 +24,4 @@
 
 // 6 - Pages;
 @import 'pages/about';
+@import 'pages/options';

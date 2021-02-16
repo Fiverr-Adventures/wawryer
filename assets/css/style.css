@@ -8183,7 +8183,6 @@ h5 {
   line-height: 1.2;
   letter-spacing: 1px;
   text-align: left;
-  color: #ffffff;
 }
 
 .button-semi {
@@ -8193,6 +8192,7 @@ h5 {
   line-height: 1.2;
   letter-spacing: 1px;
   text-align: left;
+  color: #575482;
 }
 
 .x-large {
@@ -8245,6 +8245,16 @@ h5 {
   color: #0f0a4d;
 }
 
+select {
+  font-family: "Manrope Medium" !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 1.6 !important;
+  letter-spacing: 0.5px !important;
+  text-align: left !important;
+  color: #8785a6 !important;
+}
+
 .placeholder {
   font-family: "Manrope Medium";
   font-size: 14px;
@@ -8255,7 +8265,17 @@ h5 {
   color: #8785a6;
 }
 
-@media (max-width: 576px) {
+.span-bold {
+  font-family: "Manrope Bold";
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #27225f;
+}
+
+@media (max-width: 1200px) {
   h1 {
     font-size: 24px;
     line-height: 1.2;
@@ -8276,17 +8296,35 @@ h5 {
     font-size: 14px;
     line-height: 1.3;
   }
-  p.x-large {
+  .x-large {
     font-size: 20px;
     line-height: 1.6;
   }
-  p.large {
+  .large {
     font-size: 14px;
     line-height: 1.6;
   }
-  p.medium {
+  .medium {
     font-size: 14px;
     line-height: 1.6;
+  }
+  .label1 {
+    font-size: 10px;
+  }
+  .label2 {
+    font-size: 10px;
+  }
+  select {
+    font-size: 12px !important;
+  }
+  .placeholder {
+    font-size: 12px;
+  }
+  .button-med {
+    font-size: 14px;
+  }
+  .button-semi {
+    font-size: 12px;
   }
 }
 
@@ -8301,7 +8339,27 @@ h5 {
   align-self: flex-end;
 }
 
-.card-pick {
+@media (max-width: 992px) {
+  .get-prices {
+    padding: 12px 18px;
+    width: 140px;
+    height: 45px;
+    margin-top: 0px;
+  }
+}
+
+.select-service {
+  padding: 14px 18px 16px;
+  width: 100%;
+  height: 47px;
+  background: #FFFFFF;
+  border: 1px solid #27225F;
+  box-sizing: border-box;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.cards .card-pick {
   width: 30%;
   background: #FFFFFF;
   border: 1px solid #b7b6ca;
@@ -8309,28 +8367,137 @@ h5 {
   box-shadow: 0px 4px 20px rgba(197, 213, 233, 0.15);
   border-radius: 6px;
   padding: 9px 10px 21px;
+  /*****************************  tablet-landscape-down ***************************** */
 }
 
-.card-pick .pick-header {
+.cards .card-pick .pick-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
 }
 
-.card-pick .pick-header select {
+.cards .card-pick .pick-header select {
   background-color: #F9F9FC;
+  font-size: 12px;
+  padding: 9px 11px;
+  height: 36.37px;
 }
 
-.card-pick .pick-content {
-  margin-top: 2px;
+.cards .card-pick .pick-content {
+  margin-top: 10px;
 }
 
-.card-booking {
+@media (max-width: 992px) {
+  .cards .card-pick {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .cards .card-pick:not(:last-child) {
+    margin-bottom: 26px;
+  }
+}
+
+@media (max-width: 992px) {
+  .cards .card-booking {
+    margin-bottom: 26px;
+  }
+  .cards:last-child {
+    margin-bottom: 30px;
+  }
+}
+
+.cards .card-booking {
+  width: 30%;
   background: #FFFFFF;
   border: 1px solid #E7E7ED;
   box-sizing: border-box;
   border-radius: 6px;
+  /*****************************  tablet-landscape-down ***************************** */
+}
+
+.cards .card-booking .book-content {
+  padding: 28px 60px 0px 23px;
+}
+
+.cards .card-booking .book-content .book-period {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 22px;
+  margin-top: 22px;
+}
+
+.cards .card-booking .book-content .book-period img {
+  margin-right: 8px;
+}
+
+.cards .card-booking .book-content p {
+  margin-bottom: 0;
+}
+
+.cards .card-booking .book-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px 0 23px;
+  background: #F9F9FC;
+  border-top: 1px solid #E7E7ED;
+  box-sizing: border-box;
+  border-radius: 0px 0px 6px 6px;
+  width: 100%;
+}
+
+@media (max-width: 992px) {
+  .cards .card-booking {
+    width: 100%;
+  }
+}
+
+.cards .card-option {
+  width: 20%;
+  background: #FFFFFF;
+  border: 1px solid #E7E7ED;
+  box-sizing: border-box;
+  box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+.cards .card-option:last-child {
+  width: 30%;
+}
+
+.cards .card-option .option-header {
+  background: #E7E7ED;
+  margin-bottom: 6px;
+  padding: 16px 0;
+  text-align: center;
+}
+
+.cards .card-option .option-content {
+  padding: 16px 16px 0px;
+}
+
+.cards .card-option .option-content .option-item:not(:last-child) {
+  border-bottom: 1px solid #E7E7ED;
+}
+
+.cards .card-option .option-content .option-item {
+  color: #575482;
+}
+
+.cards .card-option .option-content .option-item:not(:first-child) {
+  padding-top: 9px;
+}
+
+.cards .card-option .option-content .option-item:not(:last-child) {
+  padding-bottom: 9px;
+}
+
+.cards .card-option .option-footer {
+  padding: 123px 16px 24px;
 }
 
 .about-page {
@@ -8344,10 +8511,25 @@ h5 {
 .about-page main {
   width: 100%;
   max-width: 1440px;
-  margin: 55px 99px;
-  border: 1px solid;
+  margin: 55px 150px;
   display: flex;
   flex-direction: column;
+  /*******************************   tablet-landscape-down   *************************************/
+}
+
+.about-page main select {
+  padding: 12px 16px;
+  height: 46px;
+}
+
+.about-page main .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about-page main .easy-booking h1 {
+  margin-bottom: 33px;
 }
 
 .about-page main .easy-booking .select-items {
@@ -8361,15 +8543,68 @@ h5 {
   width: 47.5%;
 }
 
-.about-page main .easy-booking .cards {
+.about-page main .recent-booking {
+  margin-top: 60px;
+}
+
+.about-page main .recent-booking h1 {
+  margin-bottom: 26px;
+}
+
+@media (max-width: 992px) {
+  .about-page main {
+    padding: 12px 16px;
+    height: 46px;
+  }
+}
+
+@media (max-width: 992px) and (max-width: 768px) {
+  .about-page main {
+    margin: 70px 80px;
+  }
+}
+
+@media (max-width: 992px) {
+  .about-page main .cards {
+    flex-direction: column;
+  }
+  .about-page main .easy-booking h1 {
+    margin-bottom: 30px;
+  }
+  .about-page main .easy-booking .select-items {
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+  .about-page main .easy-booking .select-items .select-item:not(:last-child) {
+    margin-bottom: 16px;
+  }
+  .about-page main .easy-booking .select-items .select-item {
+    width: 100%;
+  }
+  .about-page main .recent-booking {
+    margin-top: 30px;
+  }
+  .about-page main .recent-booking h1 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-page main {
+    margin: 70px 20px;
+  }
+}
+
+.cards {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.about-page main .recent-booking .cards {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+/*******************************   tablet-landscape-down   *************************************/
+@media (max-width: 992px) {
+  .cards {
+    flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */
