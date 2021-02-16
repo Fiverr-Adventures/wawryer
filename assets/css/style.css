@@ -8290,6 +8290,17 @@ h5 {
   }
 }
 
+.get-prices {
+  padding: 16px 24px;
+  width: 153px;
+  height: 51px;
+  background: linear-gradient(180deg, #0071FF 0%, #0054BE 100%);
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 41px;
+  align-self: flex-end;
+}
+
 .card-pick {
   width: 30%;
   background: #FFFFFF;
@@ -8315,6 +8326,13 @@ h5 {
   margin-top: 2px;
 }
 
+.card-booking {
+  background: #FFFFFF;
+  border: 1px solid #E7E7ED;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
 .about-page {
   position: relative;
   background: #FBFDFF;
@@ -8328,31 +8346,30 @@ h5 {
   max-width: 1440px;
   margin: 55px 99px;
   border: 1px solid;
+  display: flex;
+  flex-direction: column;
 }
 
-.about-page main .select-items {
+.about-page main .easy-booking .select-items {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin-bottom: 40px;
 }
 
-.about-page main .select-items .select-item {
+.about-page main .easy-booking .select-items .select-item {
   width: 47.5%;
 }
 
-.about-page main .select-items .select-item select {
-  width: 100%;
-}
-
-.about-page main .cards {
+.about-page main .easy-booking .cards {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-.about-page main .get-prices {
-  margin-top: 41px;
-  align-self: flex-end;
+.about-page main .recent-booking .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 /*# sourceMappingURL=style.css.map */

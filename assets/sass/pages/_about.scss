@@ -8,22 +8,24 @@
         max-width: 1440px;
         margin: 55px 99px;
         border: 1px solid;
-        .select-items {
-            @include flex (space-between, flex-start);
-            .select-item {
-                width: 47.5%;
-                select {
-                    width: 100%;
+        display: flex;
+        flex-direction: column;
+        .easy-booking {
+           .select-items {
+                @include flex (space-between, flex-start);
+                margin-bottom: 40px;
+                .select-item {
+                    width: 47.5%;
                 }
             }
-            margin-bottom: 40px;
+            .cards {
+                @include flex (space-between, flex-start);
+            }
         }
-        .cards {
-            @include flex (space-between, flex-start);
-        }
-        .get-prices {
-           margin-top: 41px;
-           align-self: flex-end;
+        .recent-booking {
+            .cards {
+                @include flex (space-between, flex-start);
+            }
         }
     }
 }
