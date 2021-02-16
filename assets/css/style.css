@@ -8290,35 +8290,69 @@ h5 {
   }
 }
 
+.card-pick {
+  width: 30%;
+  background: #FFFFFF;
+  border: 1px solid #b7b6ca;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 20px rgba(197, 213, 233, 0.15);
+  border-radius: 6px;
+  padding: 9px 10px 21px;
+}
+
+.card-pick .pick-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.card-pick .pick-header select {
+  background-color: #F9F9FC;
+}
+
+.card-pick .pick-content {
+  margin-top: 2px;
+}
+
 .about-page {
   position: relative;
   background: #FBFDFF;
   display: flex;
   justify-content: center;
-}
-
-.about-page * {
-  border: 1px solid;
+  align-items: flex-start;
 }
 
 .about-page main {
   width: 100%;
   max-width: 1440px;
   margin: 55px 99px;
+  border: 1px solid;
 }
 
 .about-page main .select-items {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   margin-bottom: 40px;
 }
 
 .about-page main .select-items .select-item {
-  width: 44%;
+  width: 47.5%;
 }
 
 .about-page main .select-items .select-item select {
-  max-width: 606px;
   width: 100%;
+}
+
+.about-page main .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about-page main .get-prices {
+  margin-top: 41px;
+  align-self: flex-end;
 }
 /*# sourceMappingURL=style.css.map */

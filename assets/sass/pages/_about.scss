@@ -1,27 +1,29 @@
 .about-page {
     position: relative;
     background: #FBFDFF;
-    display: flex;
-    justify-content: center;
-    *{
-        border: 1px solid;
-    }
+    @include flex (center, flex-start);
     
     main { 
         width: 100%;
         max-width: 1440px;
         margin: 55px 99px;
+        border: 1px solid;
         .select-items {
-            display: flex;
-            justify-content: space-between;
+            @include flex (space-between, flex-start);
             .select-item {
-                width: 44%;
+                width: 47.5%;
                 select {
-                    max-width: 606px;
                     width: 100%;
                 }
             }
             margin-bottom: 40px;
+        }
+        .cards {
+            @include flex (space-between, flex-start);
+        }
+        .get-prices {
+           margin-top: 41px;
+           align-self: flex-end;
         }
     }
 }

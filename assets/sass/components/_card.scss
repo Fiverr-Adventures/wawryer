@@ -1,3 +1,19 @@
-// .card-pick {
-//     border: ;
-// }
+.card-pick {
+    width: 30%;
+    background: #FFFFFF;
+    border: 1px solid $cloudy-blue;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 20px rgba(197, 213, 233, 0.15);
+    border-radius: 6px;
+    padding: 9px 10px 21px;
+    .pick-header {
+        @include flex(space-between, center);
+        width: 100%;
+        select {
+            background-color: #F9F9FC; 
+        }
+    }
+    .pick-content {
+        margin-top: 2px;
+    }
+}
