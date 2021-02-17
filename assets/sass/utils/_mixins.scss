@@ -20,6 +20,11 @@
 			@content;
 		}
 	}
+	@else if $size == desktop-large {
+		@media (max-width: $breakpoint-xxl) {
+			@content;
+		}
+	}
 }
 
 // Ripple effect for buttons
@@ -54,7 +59,7 @@
 	}
   }
 // Flexbox
-@mixin flex($justify, $align) {
+@mixin flex($justify, $align) {      
 	display: flex;
 	justify-content: $justify;
 	align-items: $align;

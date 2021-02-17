@@ -1,0 +1,31 @@
+.optional-services {
+    width: 65%;
+    .cards {
+        .card-optional {
+            width: 31%;
+            background: #F9F9FC;
+            border: 1px solid #E6E6E6;
+            padding: 20px 16px 18px;
+    
+            .optional-header {
+                @include flex(space-between, center);
+                width: 100%;
+                margin-bottom: 16px;
+                .optional-icon {
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                    background: #8785A6;
+                    @include flex(center, center);
+                }
+                .optional-check {
+                    display: flex;
+                    .dollar {
+                        margin-bottom: 0;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

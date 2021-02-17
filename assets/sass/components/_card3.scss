@@ -1,38 +1,58 @@
-.cards {
-    .card-option {
-        width: 20%;
-        &:last-child {
-            width: 30%;
-        }
-        background: #FFFFFF;
-        border: 1px solid #E7E7ED;
-        box-sizing: border-box;
-        box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
-        border-radius: 6px; 
-        .option-header {
-            background: #E7E7ED;
-            margin-bottom: 6px;
-            padding: 16px 0;
-            text-align: center;
-        }
-        .option-content {
-            padding: 16px 16px 0px;
-            @include not-last-child('.option-item') {
-                border-bottom: 1px solid #E7E7ED;
+.pick-options{
+    width: 100%;
+    .cards {
+        @include for-size(desktop-large) {
+            flex-wrap: wrap;
+        }    
+        .card-option {
+            width: 20%;
+            margin-right: auto;
+            &:last-child {
+                width: 30%;
+                margin-left: auto;
+                margin-right: 0;
             }
-            .option-item {
-                &:not(:first-child) {
-                    padding-top: 9px;
-                }
-                &:not(:last-child) {
-                    padding-bottom: 9px;
-                }
-                // font-size: 14px;
-                color: $dusk;
+            background: #FFFFFF;
+            border: 1px solid #E7E7ED;
+            box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+            .option-header {
+                background: #E7E7ED;
+                margin-bottom: 6px;
+                padding: 16px 0;
+                text-align: center;
             }
+            .option-content {
+                padding: 16px 16px 0px;
+                @include not-last-child('.option-item') {
+                    border-bottom: 1px solid #E7E7ED;
+                }
+                .option-item {
+                    &:not(:first-child) {
+                        padding-top: 9px;
+                    }
+                    &:not(:last-child) {
+                        padding-bottom: 9px;
+                    }
+                    // font-size: 14px;
+                    color: $dusk;
+                }
+            }
+            .option-footer {
+                padding: 123px 16px 24px;
+            }
+            @include for-size(desktop-large) { 
+                 width: 31%;
+                &:last-child {
+                    width: 40%;
+                    margin: auto;
+                    margin-top: 30px;
+                } 
+            }
+            /*****************************  tablet-landscape-down ***************************** */
+            @include for-size(tablet-landscape-down) {
+                width: 100%;
+            } 
         }
-        .option-footer {
-            padding: 123px 16px 24px;
-        }
+        
     }
 }

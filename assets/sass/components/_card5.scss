@@ -1,0 +1,30 @@
+.shipment-protection {
+    width: 43%;
+    .cards {
+        .card-shipment {
+            width: 47%;
+            background: #FFFFFF;
+            border: 1px solid #E6E6E6;
+
+            .shipment-header {
+                text-align: center;
+                width: 100%;
+                margin-bottom: 16px;
+                padding: 17px 0px;
+                background: #E7E7ED;
+            }
+            .shipment-content {
+                padding: 0px 16px;
+                margin-bottom: 55px;
+                // margin-bottom: ;
+                .justify {
+                    text-align: center;
+                }
+            }
+            .shipment-footer {
+                padding: 0 16px;
+                padding-bottom: 24px;
+            }
+        }
+    }
+}

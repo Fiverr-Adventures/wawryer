@@ -8155,6 +8155,7 @@ h3 {
   line-height: 1.2;
   letter-spacing: 0.15px;
   text-align: center;
+  color: #575482;
 }
 
 h4 {
@@ -8164,6 +8165,7 @@ h4 {
   line-height: 1.3;
   letter-spacing: 0.15px;
   text-align: left;
+  color: #0f0a4d;
 }
 
 h5 {
@@ -8183,6 +8185,15 @@ h5 {
   line-height: 1.2;
   letter-spacing: 1px;
   text-align: left;
+}
+
+.button-med-3 {
+  font-family: "Manrope Medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.5px;
+  text-align: center;
 }
 
 .button-semi {
@@ -8323,6 +8334,9 @@ select {
   .button-med {
     font-size: 14px;
   }
+  .button-med-3 {
+    font-size: 12px;
+  }
   .button-semi {
     font-size: 12px;
   }
@@ -8357,6 +8371,15 @@ select {
   box-sizing: border-box;
   border-radius: 4px;
   text-align: center;
+}
+
+.book-service {
+  background: #18D1BE;
+  border: 1px solid #18D1BE;
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 100%;
+  padding: 8px 0;
 }
 
 .cards .card-pick {
@@ -8456,48 +8479,194 @@ select {
   }
 }
 
-.cards .card-option {
+.pick-options {
+  width: 100%;
+}
+
+@media (max-width: 1474px) {
+  .pick-options .cards {
+    flex-wrap: wrap;
+  }
+}
+
+.pick-options .cards .card-option {
   width: 20%;
+  margin-right: auto;
   background: #FFFFFF;
   border: 1px solid #E7E7ED;
-  box-sizing: border-box;
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
-  border-radius: 6px;
+  /*****************************  tablet-landscape-down ***************************** */
 }
 
-.cards .card-option:last-child {
+.pick-options .cards .card-option:last-child {
   width: 30%;
+  margin-left: auto;
+  margin-right: 0;
 }
 
-.cards .card-option .option-header {
+.pick-options .cards .card-option .option-header {
   background: #E7E7ED;
   margin-bottom: 6px;
   padding: 16px 0;
   text-align: center;
 }
 
-.cards .card-option .option-content {
+.pick-options .cards .card-option .option-content {
   padding: 16px 16px 0px;
 }
 
-.cards .card-option .option-content .option-item:not(:last-child) {
+.pick-options .cards .card-option .option-content .option-item:not(:last-child) {
   border-bottom: 1px solid #E7E7ED;
 }
 
-.cards .card-option .option-content .option-item {
+.pick-options .cards .card-option .option-content .option-item {
   color: #575482;
 }
 
-.cards .card-option .option-content .option-item:not(:first-child) {
+.pick-options .cards .card-option .option-content .option-item:not(:first-child) {
   padding-top: 9px;
 }
 
-.cards .card-option .option-content .option-item:not(:last-child) {
+.pick-options .cards .card-option .option-content .option-item:not(:last-child) {
   padding-bottom: 9px;
 }
 
-.cards .card-option .option-footer {
+.pick-options .cards .card-option .option-footer {
   padding: 123px 16px 24px;
+}
+
+@media (max-width: 1474px) {
+  .pick-options .cards .card-option {
+    width: 31%;
+  }
+  .pick-options .cards .card-option:last-child {
+    width: 40%;
+    margin: auto;
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .pick-options .cards .card-option {
+    width: 100%;
+  }
+}
+
+.optional-services {
+  width: 65%;
+}
+
+.optional-services .cards .card-optional {
+  width: 31%;
+  background: #F9F9FC;
+  border: 1px solid #E6E6E6;
+  padding: 20px 16px 18px;
+}
+
+.optional-services .cards .card-optional .optional-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.optional-services .cards .card-optional .optional-header .optional-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #8785A6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.optional-services .cards .card-optional .optional-header .optional-check {
+  display: flex;
+}
+
+.optional-services .cards .card-optional .optional-header .optional-check .dollar {
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+.shipment-protection {
+  width: 43%;
+}
+
+.shipment-protection .cards .card-shipment {
+  width: 47%;
+  background: #FFFFFF;
+  border: 1px solid #E6E6E6;
+}
+
+.shipment-protection .cards .card-shipment .shipment-header {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 16px;
+  padding: 17px 0px;
+  background: #E7E7ED;
+}
+
+.shipment-protection .cards .card-shipment .shipment-content {
+  padding: 0px 16px;
+  margin-bottom: 55px;
+}
+
+.shipment-protection .cards .card-shipment .shipment-content .justify {
+  text-align: center;
+}
+
+.shipment-protection .cards .card-shipment .shipment-footer {
+  padding: 0 16px;
+  padding-bottom: 24px;
+}
+
+.order-summary {
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+.order-summary .option-header {
+  background-color: #000000 !important;
+  margin-bottom: 0px !important;
+}
+
+.order-summary .option-header h2 {
+  text-align: center !important;
+  color: #ffffff !important;
+}
+
+.order-summary .option-content {
+  padding: 16px 20px 142px !important;
+}
+
+.order-summary .option-content .option-item-ex:not(:last-child) {
+  border-bottom: 1px solid #E7E7ED;
+}
+
+.order-summary .option-content .option-item-ex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.order-summary .option-content .option-item-ex p, .order-summary .option-content .option-item-ex h5 {
+  margin-bottom: 0px !important;
+}
+
+.order-summary .option-footer-ex {
+  border-top: 1px solid #B7B6CA;
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+  padding: 13px 0;
+}
+
+.order-summary .option-footer-ex .pay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .about-page {
@@ -8554,7 +8723,6 @@ select {
 @media (max-width: 992px) {
   .about-page main {
     padding: 12px 16px;
-    height: 46px;
   }
 }
 
@@ -8595,16 +8763,82 @@ select {
   }
 }
 
-.cards {
+.options-page {
+  position: relative;
+  background: #FBFDFF;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.options-page main {
+  width: 100%;
+  max-width: 1440px;
+  margin: 55px 150px;
+  display: flex;
+  flex-direction: column;
+  /*******************************   tablet-landscape-down   *************************************/
+}
+
+.options-page main .pick-options {
+  margin-bottom: 55px;
+}
+
+.options-page main .pick-options h1 {
+  margin-bottom: 54px;
+}
+
+.options-page main .optional-services {
+  margin-bottom: 89px;
+}
+
+.options-page main .optional-services h4 {
+  margin-bottom: 8px;
+}
+
+.options-page main .cards {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
 }
 
-/*******************************   tablet-landscape-down   *************************************/
+.options-page main .cards > * {
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.options-page main textarea {
+  background-color: #F9F9FC;
+  border-color: #E6E6E6;
+  margin-bottom: 61px;
+  height: 162px;
+}
+
+.options-page main .shipment-protection h2 {
+  margin-bottom: 26px;
+}
+
 @media (max-width: 992px) {
-  .cards {
+  .options-page main {
+    padding: 12px 16px;
+  }
+}
+
+@media (max-width: 992px) and (max-width: 768px) {
+  .options-page main {
+    margin: 70px 80px;
+  }
+}
+
+@media (max-width: 992px) {
+  .options-page main .cards {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 576px) {
+  .options-page main {
+    margin: 70px 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
