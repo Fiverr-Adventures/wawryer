@@ -13,7 +13,7 @@
             @include flex(space-between, center);
             width: 100%;
             select {
-                background-color: #F9F9FC;
+                background-color: $pale-grey;
                 font-size: $font-size-xs;
                 padding: 9px 11px;
                 height: 36.37px;

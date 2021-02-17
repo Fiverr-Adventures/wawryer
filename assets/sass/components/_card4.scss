@@ -3,7 +3,7 @@
     .cards {
         .card-optional {
             width: 31%;
-            background: #F9F9FC;
+            background: $pale-grey;
             border: 1px solid #E6E6E6;
             padding: 20px 16px 18px;
     
@@ -26,6 +26,24 @@
                     }
                 }
             }
-        }
+             /*****************************  desktop-large ****************************** */
+             @include for-size(desktop-large) { 
+                width: 30%;
+                margin-bottom: 30px;
+           }
+
+           /*****************************  tablet-landscape-down ********************** */
+           @include for-size(tablet-landscape-down) {
+               width: 100%;
+                &:last-child {
+                   margin-bottom: 0;
+                }
+           }
+           /****************** End card-option ***********************************************/
+       }
     }
-}
+    @include for-size(desktop-large) {
+        flex-wrap: wrap;
+        width: 100%;
+    } 
+} 

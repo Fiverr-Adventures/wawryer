@@ -5,7 +5,8 @@
     .option-header {
         background-color: #000000 !important;
         margin-bottom: 0px !important;
-        // border-radius: 6px 0px;
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
         h2 {
            text-align: center !important;
             color: #ffffff !important; 
@@ -13,7 +14,7 @@
     }
     .option-content {
         @include not-last-child('.option-item-ex') {
-            border-bottom: 1px solid #E7E7ED ;
+            border-bottom: 1px solid $pale-lilac ;
         }
         padding: 16px 20px 142px !important;
         .option-item-ex {
@@ -34,5 +35,11 @@
         .pay {
             @include flex(space-between, center);
         }     
+    }
+     /*****************************  phone-only ********************** */
+     @include for-size(phone-only) {
+        .option-content {
+            padding-bottom: 51px !important;
+        }
     }
 }

@@ -1,0 +1,38 @@
+.details-v1-page {
+    position: relative;
+    background: #FFFFFF ;
+    @include flex (center, flex-start);
+  
+    main { 
+        width: 100%;
+        max-width: 1440px;
+        margin: 55px 150px;
+        display: flex;
+        flex-direction: column;
+        border: 1px solid;
+        h1 {margin-bottom: 38px;}
+        .details {
+            input { border: 1px solid $cloudy-blue; }
+            @include flex(space-between, flex-start);
+            .details-inputs {
+                width: 65%;
+                border: 1px solid;
+                .pick-details {
+                    @include flex(space-between, flex-start);
+                    margin-bottom: 60px;
+                    @include not-last-child('input') {
+                        margin-bottom: 16px;
+                    }
+                    .Pickup-Details {
+                        width: 48%;
+                    }
+                    .Deliver-Details {width: 48%; }
+                } 
+            }
+            .summary-detail {
+                width: 32%;
+                border: 1px solid;
+            }
+        }
+    }
+}

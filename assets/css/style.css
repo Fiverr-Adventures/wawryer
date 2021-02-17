@@ -8342,6 +8342,13 @@ select {
   }
 }
 
+@media (max-width: 576px) {
+  h1 {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+}
+
 .get-prices {
   padding: 16px 24px;
   width: 153px;
@@ -8380,6 +8387,21 @@ select {
   border-radius: 4px;
   width: 100%;
   padding: 8px 0;
+}
+
+@media (max-width: 576px) {
+  .book-service {
+    font-size: 14px;
+  }
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 1;
+  display: block;
+  background: url("../img/icons/Message.svg") no-repeat;
+  width: 20px;
+  height: 20px;
+  border-width: thin;
 }
 
 .cards .card-pick {
@@ -8435,7 +8457,7 @@ select {
 .cards .card-booking {
   width: 30%;
   background: #FFFFFF;
-  border: 1px solid #E7E7ED;
+  border: 1px solid #e7e7ed;
   box-sizing: border-box;
   border-radius: 6px;
   /*****************************  tablet-landscape-down ***************************** */
@@ -8467,7 +8489,7 @@ select {
   align-items: center;
   padding: 0 60px 0 23px;
   background: #F9F9FC;
-  border-top: 1px solid #E7E7ED;
+  border-top: 1px solid #e7e7ed;
   box-sizing: border-box;
   border-radius: 0px 0px 6px 6px;
   width: 100%;
@@ -8483,19 +8505,17 @@ select {
   width: 100%;
 }
 
-@media (max-width: 1474px) {
-  .pick-options .cards {
-    flex-wrap: wrap;
-  }
-}
-
 .pick-options .cards .card-option {
+  /*********************** Start card-option *************************************/
   width: 20%;
   margin-right: auto;
   background: #FFFFFF;
-  border: 1px solid #E7E7ED;
+  border: 1px solid #e7e7ed;
   box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
-  /*****************************  tablet-landscape-down ***************************** */
+  /*****************************  desktop-large ****************************** */
+  /*****************************  tablet-landscape-down ********************** */
+  /*****************************  phone-only ********************** */
+  /****************** End card-option ***********************************************/
 }
 
 .pick-options .cards .card-option:last-child {
@@ -8505,7 +8525,7 @@ select {
 }
 
 .pick-options .cards .card-option .option-header {
-  background: #E7E7ED;
+  background: #e7e7ed;
   margin-bottom: 6px;
   padding: 16px 0;
   text-align: center;
@@ -8516,7 +8536,7 @@ select {
 }
 
 .pick-options .cards .card-option .option-content .option-item:not(:last-child) {
-  border-bottom: 1px solid #E7E7ED;
+  border-bottom: 1px solid #e7e7ed;
 }
 
 .pick-options .cards .card-option .option-content .option-item {
@@ -8537,18 +8557,34 @@ select {
 
 @media (max-width: 1474px) {
   .pick-options .cards .card-option {
-    width: 31%;
+    width: 45%;
+    margin-right: 0;
+    margin-bottom: 30px;
   }
   .pick-options .cards .card-option:last-child {
-    width: 40%;
-    margin: auto;
-    margin-top: 30px;
+    width: 45%;
   }
 }
 
 @media (max-width: 992px) {
   .pick-options .cards .card-option {
     width: 100%;
+  }
+  .pick-options .cards .card-option:last-child {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+}
+
+@media (max-width: 576px) {
+  .pick-options .cards .card-option .option-footer {
+    padding-top: 51px;
+  }
+}
+
+@media (max-width: 1474px) {
+  .pick-options .cards {
+    flex-wrap: wrap;
   }
 }
 
@@ -8561,6 +8597,9 @@ select {
   background: #F9F9FC;
   border: 1px solid #E6E6E6;
   padding: 20px 16px 18px;
+  /*****************************  desktop-large ****************************** */
+  /*****************************  tablet-landscape-down ********************** */
+  /****************** End card-option ***********************************************/
 }
 
 .optional-services .cards .card-optional .optional-header {
@@ -8590,6 +8629,29 @@ select {
   margin-right: 10px;
 }
 
+@media (max-width: 1474px) {
+  .optional-services .cards .card-optional {
+    width: 30%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .optional-services .cards .card-optional {
+    width: 100%;
+  }
+  .optional-services .cards .card-optional:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1474px) {
+  .optional-services {
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
+
 .shipment-protection {
   width: 43%;
 }
@@ -8598,6 +8660,9 @@ select {
   width: 47%;
   background: #FFFFFF;
   border: 1px solid #E6E6E6;
+  /*****************************  desktop-large ****************************** */
+  /*****************************  tablet-landscape-down ********************** */
+  /****************** End card-option ***********************************************/
 }
 
 .shipment-protection .cards .card-shipment .shipment-header {
@@ -8605,7 +8670,7 @@ select {
   width: 100%;
   margin-bottom: 16px;
   padding: 17px 0px;
-  background: #E7E7ED;
+  background: #e7e7ed;
 }
 
 .shipment-protection .cards .card-shipment .shipment-content {
@@ -8622,13 +8687,42 @@ select {
   padding-bottom: 24px;
 }
 
+@media (max-width: 1474px) {
+  .shipment-protection .cards .card-shipment {
+    width: 45%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .shipment-protection .cards .card-shipment {
+    width: 100%;
+  }
+}
+
+@media (max-width: 1474px) {
+  .shipment-protection {
+    flex-wrap: wrap;
+    width: 70%;
+  }
+}
+
+@media (max-width: 992px) {
+  .shipment-protection {
+    width: 100%;
+  }
+}
+
 .order-summary {
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.15) !important;
+  /*****************************  phone-only ********************** */
 }
 
 .order-summary .option-header {
   background-color: #000000 !important;
   margin-bottom: 0px !important;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
 }
 
 .order-summary .option-header h2 {
@@ -8641,7 +8735,7 @@ select {
 }
 
 .order-summary .option-content .option-item-ex:not(:last-child) {
-  border-bottom: 1px solid #E7E7ED;
+  border-bottom: 1px solid #e7e7ed;
 }
 
 .order-summary .option-content .option-item-ex {
@@ -8667,6 +8761,12 @@ select {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@media (max-width: 576px) {
+  .order-summary .option-content {
+    padding-bottom: 51px !important;
+  }
 }
 
 .about-page {
@@ -8818,21 +8918,37 @@ select {
   margin-bottom: 26px;
 }
 
+@media (max-width: 1200px) {
+  .options-page main .pick-options {
+    margin-bottom: 10px;
+  }
+  .options-page main .optional-services {
+    margin-bottom: 10px;
+  }
+}
+
 @media (max-width: 992px) {
   .options-page main {
     padding: 12px 16px;
   }
-}
-
-@media (max-width: 992px) and (max-width: 768px) {
-  .options-page main {
-    margin: 70px 80px;
+  .options-page main .cards {
+    flex-direction: column;
+  }
+  .options-page main .pick-options h1 {
+    margin-bottom: 30px;
+  }
+  .options-page main textarea {
+    margin-bottom: 40px;
+    height: 159px;
+  }
+  .options-page main .shipment-protection h2 {
+    margin-bottom: 20px;
   }
 }
 
-@media (max-width: 992px) {
-  .options-page main .cards {
-    flex-direction: column;
+@media (max-width: 768px) {
+  .options-page main {
+    margin: 70px 80px;
   }
 }
 
@@ -8840,5 +8956,65 @@ select {
   .options-page main {
     margin: 70px 20px;
   }
+}
+
+.details-v1-page {
+  position: relative;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.details-v1-page main {
+  width: 100%;
+  max-width: 1440px;
+  margin: 55px 150px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+}
+
+.details-v1-page main h1 {
+  margin-bottom: 38px;
+}
+
+.details-v1-page main .details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.details-v1-page main .details input {
+  border: 1px solid #b7b6ca;
+}
+
+.details-v1-page main .details .details-inputs {
+  width: 65%;
+  border: 1px solid;
+}
+
+.details-v1-page main .details .details-inputs .pick-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 60px;
+}
+
+.details-v1-page main .details .details-inputs .pick-details input:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.details-v1-page main .details .details-inputs .pick-details .Pickup-Details {
+  width: 48%;
+}
+
+.details-v1-page main .details .details-inputs .pick-details .Deliver-Details {
+  width: 48%;
+}
+
+.details-v1-page main .details .summary-detail {
+  width: 32%;
+  border: 1px solid;
 }
 /*# sourceMappingURL=style.css.map */

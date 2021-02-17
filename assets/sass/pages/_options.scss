@@ -22,11 +22,10 @@
             & > * {
                 box-sizing: border-box;
                 border-radius: 6px;
-
             }
         }
         textarea {
-            background-color: #F9F9FC ;
+            background-color: $pale-grey ;
             border-color: #E6E6E6;
             margin-bottom: 61px;
             height: 162px;
@@ -36,15 +35,33 @@
         }
 
         /*******************************   tablet-landscape-down   *************************************/
-        @include for-size(tablet-landscape-down) {
-            @include for-size(tablet-portrait-down) {
-                margin: 70px 80px;
+        @include for-size(desktop-down) {
+            .pick-options {
+                margin-bottom: 10px;
             }
+            .optional-services {
+                margin-bottom: 10px;
+            }
+        }
+        @include for-size(tablet-landscape-down) {
             .cards { flex-direction: column }
             padding: 12px 16px;
+            .pick-options {
+                h1 { margin-bottom: 30px; }
+            }
+            textarea {
+                margin-bottom: 40px;
+                height: 159px;
+            }
+            .shipment-protection {
+                h2 { margin-bottom: 20px; }
+            }
+        }
+        @include for-size(tablet-portrait-down) {
+            margin: 70px 80px;
         }
         @include for-size(phone-only) {
             margin: 70px 20px;
-         }
+        }
     }
 }

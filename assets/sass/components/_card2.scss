@@ -11,7 +11,7 @@
     .card-booking {
             width: 30%;
             background: #FFFFFF;
-            border: 1px solid #E7E7ED;
+            border: 1px solid $pale-lilac;
             box-sizing: border-box;
             border-radius: 6px;
         .book-content {
@@ -31,8 +31,8 @@
         .book-footer {
             @include flex(space-between, center);
                 padding: 0 60px 0 23px;
-                background: #F9F9FC;
-                border-top: 1px solid #E7E7ED;
+                background: $pale-grey;
+                border-top: 1px solid $pale-lilac;
                 box-sizing: border-box;
                 border-radius: 0px 0px 6px 6px;
                 width: 100%;

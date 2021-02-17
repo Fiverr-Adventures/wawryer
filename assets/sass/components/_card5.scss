@@ -11,7 +11,7 @@
                 width: 100%;
                 margin-bottom: 16px;
                 padding: 17px 0px;
-                background: #E7E7ED;
+                background: $pale-lilac;
             }
             .shipment-content {
                 padding: 0px 16px;
@@ -25,6 +25,25 @@
                 padding: 0 16px;
                 padding-bottom: 24px;
             }
-        }
+             /*****************************  desktop-large ****************************** */
+             @include for-size(desktop-large) { 
+                width: 45%;
+                margin-bottom: 30px;
+           }
+
+           /*****************************  tablet-landscape-down ********************** */
+           @include for-size(tablet-landscape-down) {
+               width: 100%;
+
+           }
+           /****************** End card-option ***********************************************/
+       }
+    }
+    @include for-size(desktop-large) {
+        flex-wrap: wrap;
+        width: 70%;
+    }
+    @include for-size(tablet-landscape-down) {
+        width: 100%;
     }
 }

@@ -31,4 +31,7 @@
     border-radius: 4px;
     width: 100%;
     padding: 8px 0;
+    @include for-size(phone-only) {
+        font-size: $font-size-sm;
+    }
 }
