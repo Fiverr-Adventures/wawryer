@@ -12,27 +12,42 @@
         border: 1px solid;
         h1 {margin-bottom: 38px;}
         .details {
-            input { border: 1px solid $cloudy-blue; }
+            input {
+                border: 1px solid $cloudy-blue;
+                // media query
+                input:not([type='checkbox']) {
+                    height: 46px;   
+                }    
+            }
             @include flex(space-between, flex-start);
             .details-inputs {
                 width: 65%;
                 border: 1px solid;
                 .pick-details {
                     @include flex(space-between, flex-start);
+                    // media-q
                     margin-bottom: 60px;
                     @include not-last-child('input') {
                         margin-bottom: 16px;
+                    } // media-q
+                    .Pickup-Details { width: 48%; }
+                    // media-q
+                    .Deliver-Details { width: 48%; }
+                }
+                .shipment-details {
+                    .card-shipment { // media
+                        margin-bottom: 30px;
                     }
-                    .Pickup-Details {
-                        width: 48%;
+                    .add-item {
+                        img {margin-left: 8px;}
+                        margin-bottom: 20px;
                     }
-                    .Deliver-Details {width: 48%; }
-                } 
+                    .parag1 {  // media
+                        margin-bottom: 28px;
+                    }
+                }
             }
-            .summary-detail {
-                width: 32%;
-                border: 1px solid;
-            }
+            .summary-detail { width: 32%; }
         }
     }
 }

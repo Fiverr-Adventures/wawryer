@@ -1,0 +1,62 @@
+.shipment-details {
+    width: 100%;
+    .card-shipment {
+        background: $pale-grey;
+        border: 1px solid $cloudy-blue;
+        border-radius: 6px;
+        width: 100%;
+        .ship-header {
+            // media query
+            padding: 19px 20px 18px;
+            border-bottom: 1px solid $cloudy-blue;
+            @include flex(space-between, center);
+            .pack-suit {
+                h5 {
+                    margin-bottom: 0;
+                    margin-left: 10px
+                }
+               @include flex(flex-start, center);
+            }
+        }
+        .ship-content {
+             // media query
+            padding: 12px 56px 24px 20px;
+            @include flex(flex-start, center);     
+            flex-wrap: wrap;
+            & > div {margin-right: 10px;}
+            .quantity {
+                @include flex(center, center);
+                .qt-input {margin: 0 10px;}
+                 // media query
+                input {width: 60px; }
+                button {
+                    background-color: $pale-grey;
+                    margin-top: 23px;
+                }
+                .qt {
+                     // media query
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    color: $white;
+                    @include flex(center, center);
+                }
+                .btn-active {
+                    background: $dusk;
+                }
+                .btn-disabled {
+                    background: $dark-indigo;
+                }
+
+            }
+             // media query
+            .type-of-items  { width: 240px; }
+            .weight-ship    { width: 120px; }
+            .length-ship    { width: 56px;  }
+            .width-ship     { width: 56px;  }
+            .height-ship    { width: 56px;  }
+            .content-ship   { width: 240px; }
+            .value-ship     { width: 120px; }
+        }
+    }
+}

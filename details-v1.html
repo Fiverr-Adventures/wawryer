@@ -60,8 +60,8 @@
                     <!-------------------------------- Card Shipment -------------------------------->
                     <div class="card-shipment">
                         <div class="ship-header">
-                            <div>
-                            <img src="./assets/img/icons/Package.svg" alt="package">
+                            <div class="pack-suit">
+                                <img src="./assets/img/icons/Package.svg" alt="package">
                                 <h5>Package or Suitcase</h5> 
                             </div>
                             <img src="./assets/img/icons/trash.svg" alt="trash">
@@ -69,48 +69,69 @@
                         <div class="ship-content">
                             <!---------------------------------- Quantity --------------------------------->
                             <div class="quantity">
-                                <button type="button" class="quantity-minus disabled" onclick="">-</button>
-                                <label class="label1"  for="quantity"> Quantity </label>
-                                <input type="text" id="quantity" class="form-control" value="1" min="1">
-                                <button type="button" onclick="">+</button>
+                                <button type="button" class="quantity-minus disabled" onclick="">
+                                    <div class="btn-disabled qt">
+                                        <img src="./assets/img/icons/minus.svg" alt="minus">
+                                    </div>
+                                </button>
+                                <div class="qt-input">
+                                    <label class="label1"  for="quantity"> Quantity </label>
+                                    <input type="text" id="quantity" class="form-control" value="1" min="1">   
+                                </div>
+                                <button type="button" onclick=""> <div class="btn-active qt">
+                                    <img src="./assets/img/icons/add.svg" alt="add"></div></button>
                             </div>
                             <!---------------------------------- Type of items ------------------------------->
-                            <label class="label1"  for="type-items"> Type of items </label>
-                            <input type="text" class="form-control" id="type-items" placeholder="Package or suitcase">
+                            <div class="type-of-items">
+                                <label class="label1"  for="type-items"> Type of items </label>
+                                <input type="text" class="form-control" id="type-items" placeholder="Package or suitcase">
+                            </div>
                             <!---------------------------------- Weight ------------------------------->
-                            <label class="label1"  for="Weight"> Weight </label>
-                            <input type="text" class="form-control" id="Weight" placeholder="Up to 2Kg">
+                            <div class="weight-ship">
+                                <label class="label1"  for="Weight"> Weight </label>
+                                <input type="text" class="form-control" id="Weight" placeholder="Up to 2Kg">
+                            </div>
                             <!---------------------------------- Length ------------------------------->
-                            <label class="label1"  for="Length"> Length </label>
-                            <input type="text" class="form-control" id="Length" placeholder="cm">
+                            <div class="length-ship">
+                                <label class="label1"  for="Length"> Length </label>
+                                <input type="text" class="form-control" id="Length" placeholder="cm"> 
+                            </div>
                             <!---------------------------------- Width ------------------------------->
-                            <label class="label1"  for="Width"> Width </label>
-                            <input type="text" class="form-control" id="Width" placeholder="cm">
+                            <div class="width-ship">
+                                <label class="label1"  for="Width"> Width </label>
+                                <input type="text" class="form-control" id="Width" placeholder="cm">   
+                            </div>
                             <!---------------------------------- Height ------------------------------->
-                            <label class="label1"  for="Height"> Height </label>
-                            <input type="text" class="form-control" id="Height" placeholder="cm">
+                            <div class="height-ship">
+                                <label class="label1"  for="Height"> Height </label>
+                                <input type="text" class="form-control" id="Height" placeholder="cm">   
+                            </div>
                             <!---------------------------------- copy ------------------------------->
                             <img src="./assets/img/icons/copy.svg" alt="copy">
                             <!---------------------------------- Content ------------------------------->
-                            <label class="label1"  for="Content"> Content </label>
-                            <input type="text" class="form-control" id="Content" placeholder="/">
+                            <div class="content-ship">
+                                <label class="label1"  for="Content"> Content </label>
+                                <input type="text" class="form-control" id="Content" placeholder="/">
+                            </div>
                             <!---------------------------------- Value ------------------------------->
-                            <label class="label1"  for="Value"> Value </label>
-                            <input type="text" class="form-control" id="Value" placeholder="£">
+                            <div class="value-ship">
+                               <label class="label1"  for="Value"> Value </label>
+                                <input type="text" class="form-control" id="Value" placeholder="£">  
+                            </div>
                         </div>
                     </div>
                     <!-------------------------------- End Shipment -------------------------------->
-                    <button type="button " class="btn btn-primary button-med ">ADD ANOTHER ITEM 
+                    <button type="button " class="btn btn-primary button-med add-item">ADD ANOTHER ITEM 
                         <img src="./assets/img/icons/Plus.svg" alt="add-item">
                     </button>
-                    <p class="medium">Not sure if your package matches our shipment regulations?
+                    <p class="medium parag1">Not sure if your package matches our shipment regulations?
                         <span class="large"> Check it here </span>
                     </p>
-                    <p class="medium">
-                    <h4>Note:</h4> We identifier the courier service provider that offers the most convenient
-                        price for the number of items and the weights you had selected. The same courier
-                        company will collect all your parcels.
-                    </p>
+                    <p class="medium parag2">
+                        <h4>Note:</h4> We identifier the courier service provider that offers the most convenient
+                            price for the number of items and the weights you had selected. The same courier
+                            company will collect all your parcels.
+                        </p>
                 </div> 
                 <div class="pick-options-dt">
                     <h2>Pickup Options</h2>
