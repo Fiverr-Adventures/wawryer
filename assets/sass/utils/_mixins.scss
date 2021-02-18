@@ -1,4 +1,9 @@
 @mixin for-size($size) {
+	@if $size == phone-small{
+		@media (max-width: $breakpoint-xs) {
+			@content;
+		}
+	}
 	@if $size == phone-only {
 		@media (max-width: $breakpoint-sm) {
 			@content;
