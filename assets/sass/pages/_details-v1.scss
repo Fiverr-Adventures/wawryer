@@ -11,16 +11,9 @@
         flex-direction: column;
         h1 { margin-bottom: 38px; }
         .details {
-            border-bottom: 1px solid $cloudy-blue;
-            margin-bottom: 19px;
-            input {
-                border: 1px solid $cloudy-blue;
-                &:not([type='checkbox']) {
-                    height: 46px;   
-                }    
-            }
-            // media
             @include flex(space-between, flex-start);
+            border-bottom: 1px solid $cloudy-blue;
+            margin-bottom: 19px;      
             .details-inputs {
                 width: 65%;
                 .pick-details {
@@ -32,7 +25,6 @@
                     .Pickup-Details { width: 48%; }
                     .Deliver-Details { width: 48%; }
                 }
-
                 .shipment-details {
                     .card-shipment { margin-bottom: 30px; }
                     .add-item { // media
@@ -44,7 +36,6 @@
                         h4 {display: inline;}
                     }
                 }
-
                 .pick-options-dt {
                     .ship-date { // media
                         width: 43%;
@@ -62,14 +53,11 @@
                     .condition {
                         margin: 24px 0 60px;
                         .form-check {
-                            @include flex(flex-start, center);
                             .form-check-input { width: 16px; height: 16px;}
                         }
                     }
                 }
-
             }
-
             .summary-detail { width: 32%; }
         }
         /****************************** desktop-large ***************************/
@@ -94,8 +82,7 @@
             .pay-now{ margin-top: 11px;}
         }
         @include for-size(tablet-landscape-down) {
-            .details {.summary-detail { width: 100%;}  }
-            
+            .details {.summary-detail { width: 100%;}  }  
         }
         @include for-size(tablet-portrait-down) {
             margin: 70px 80px;
@@ -117,7 +104,6 @@
                             }
                             margin-bottom: 8px;
                         }
-
                     }
                     .shipment-details { 
                         .card-shipment { margin-bottom: 20px; }

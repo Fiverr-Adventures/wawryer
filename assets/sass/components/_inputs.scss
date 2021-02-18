@@ -6,3 +6,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     height: 20px;
     border-width: thin;
 }
+input {
+    border: 1px solid $cloudy-blue;
+    &:not([type='checkbox']) {
+        height: 46px;   
+    }    
+}
+select {
+    border: 1px solid $cloudy-blue !important;
+}

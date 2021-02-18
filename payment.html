@@ -38,26 +38,24 @@
         <h1>To Pickup from MANCHESTER UK and Deliver to PARIS FRANCE</h1>
         <div class="payment">
             <div class="pay-process">
-                <p class="medium">
+                <div class="medium parag1-pay">
                     The card you use to set up your payment today will only be used for your broadband and cells payment.
-                    Your payment details used for any existing TV passes will stay the same. You can change your payment details at any time in <span class="h4" style="display: inline;">My Account</span>.
-                    For more info, see <a href="#">wawryer.com/agreement</a> 
-
-                    Your regular monthly payment will not start until your broadband and phone goes live.
-                </p>
+                    Your payment details used for any existing TV passes will stay the same. You can change your payment details at any time in
+                    <h4 style="display: inline;">My Account</h4> . For more info, see <a href="#" class="wawryer" >wawryer.com/agreement</a> </div>
+                <p class="medium"> Your regular monthly payment will not start until your broadband and phone goes live.</p>
                 <div class="card-types">
                     <!-- bold -->
                     <h3>Valid card types</h3>
-                        <div>
+                        <div class="bordered-card">
                             <img src="./assets/img/icons/visa.svg" alt="visa">
                         </div>
-                        <div>
+                        <div class="bordered-card">
                             <img src="./assets/img/icons/mastercard.svg" alt="mastercard">
                         </div>
                 </div>
-                <div class="form-group">
-                    <label for="card-number large">Card Number</label>
-                    <input type="text" class="form-control" id="card-number" placeholder="xxxx xxxx xxxx xxxx">
+                <div class="form-group card-number">
+                    <label for="card-num" class="large">Card Number</label>
+                    <input type="text" class="form-control" id="card-num" placeholder="xxxx xxxx xxxx xxxx">
                 </div>
                 <div class="expiry-date">
                     <div class="form-group month">
@@ -80,7 +78,7 @@
                     </div> 
                     <div class="form-group year">
                         <select id="exYear" class="form-control">
-                            <option value="0">Enter year</option>
+                            <option value="0">YYYY</option>
                             <option value="2013">2013</option>
                             <option value="2014">2014</option>
                             <option value="2015">2015</option>
@@ -105,14 +103,16 @@
                 </div>
                 <div class="name-card">
                     <label class="large">Name on Card</label>
-                    <input type="text" class="form-control">  
+                    <input type="text" class="form-control" placeholder="Name as it appears on the card">  
                 </div>
                 <div class="security-code">
                     <div class="secure-code">
                         <label class="large">Security Code</label>
                         <input type="text" class="form-control" placeholder="CVV code">  
-                    </div> 
-                    <img src="./assets/img/icons/security-code.svg" alt="security code">
+                    </div>
+                    <div>
+                        <img src="./assets/img/icons/security-code.svg" alt="security code">
+                    </div>
                 </div>
                 <div class="form-group form-check">
                     <input type="checkbox" class="form-check-input" id="Check1">
@@ -122,7 +122,7 @@
                 
             </div>  
             <!--------------------- The exeptional card -------------------->
-            <div class="card-option order-summary">
+            <div class="card-option order-summary summary-payement">
                 <div class="option-header">
                     <h2>Order Summary</h2>
                 </div>

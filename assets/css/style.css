@@ -8412,6 +8412,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   border-width: thin;
 }
 
+input {
+  border: 1px solid #b7b6ca;
+}
+
+input:not([type='checkbox']) {
+  height: 46px;
+}
+
+select {
+  border: 1px solid #b7b6ca !important;
+}
+
 .cards .card-pick {
   width: 30%;
   background: #FFFFFF;
@@ -9166,19 +9178,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .details-v1-page main .details {
-  border-bottom: 1px solid #b7b6ca;
-  margin-bottom: 19px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-}
-
-.details-v1-page main .details input {
-  border: 1px solid #b7b6ca;
-}
-
-.details-v1-page main .details input:not([type='checkbox']) {
-  height: 46px;
+  border-bottom: 1px solid #b7b6ca;
+  margin-bottom: 19px;
 }
 
 .details-v1-page main .details .details-inputs {
@@ -9242,12 +9246,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .details-v1-page main .details .details-inputs .contact-details .condition {
   margin: 24px 0 60px;
-}
-
-.details-v1-page main .details .details-inputs .contact-details .condition .form-check {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
 }
 
 .details-v1-page main .details .details-inputs .contact-details .condition .form-check .form-check-input {
@@ -9342,5 +9340,107 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .details-v1-page main {
     margin: 70px 20px;
   }
+}
+
+.payement-page {
+  position: relative;
+  background: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.payement-page main {
+  width: 100%;
+  max-width: 1440px;
+  margin: 55px 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.payement-page main h1 {
+  margin-bottom: 38px;
+}
+
+.payement-page main .payment {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.payement-page main .payment .pay-process {
+  width: 65%;
+  padding: 25px 32px 69px 33px;
+  background: #f9f9fc;
+  border-radius: 6px;
+  border: 1px solid;
+}
+
+.payement-page main .payment .pay-process .parag1-pay {
+  margin-bottom: 29px;
+}
+
+.payement-page main .payment .pay-process .card-types {
+  width: 43%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 23px;
+}
+
+.payement-page main .payment .pay-process .card-types h3 {
+  text-align: start;
+}
+
+.payement-page main .payment .pay-process .card-types .bordered-card {
+  background: #FFFFFF;
+  border: 1px solid #B3B3B3;
+  border-radius: 4px;
+  width: 70px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.payement-page main .payment .pay-process .card-number {
+  width: 55%;
+}
+
+.payement-page main .payment .pay-process .expiry-date {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 55%;
+  margin: 24px 0;
+}
+
+.payement-page main .payment .pay-process .expiry-date > div {
+  width: 45%;
+}
+
+.payement-page main .payment .pay-process .name-card {
+  width: 55%;
+}
+
+.payement-page main .payment .pay-process .security-code {
+  width: 55%;
+  margin: 24px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.payement-page main .payment .pay-process .security-code > div {
+  width: 45%;
+}
+
+.payement-page main .payment .pay-process .form-check-input {
+  width: 16px;
+  height: 16px;
+}
+
+.payement-page main .payment .summary-payement {
+  width: 32%;
 }
 /*# sourceMappingURL=style.css.map */
