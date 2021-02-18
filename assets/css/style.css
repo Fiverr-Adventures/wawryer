@@ -9148,6 +9148,19 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   margin-bottom: 28px;
 }
 
+.details-v1-page main .details .details-inputs .shipment-details .parag2 {
+  margin-bottom: 48px;
+}
+
+.details-v1-page main .details .details-inputs .shipment-details .parag2 h4 {
+  display: inline;
+}
+
+.details-v1-page main .details .details-inputs .pick-options-dt .ship-date {
+  width: 50%;
+  margin-bottom: 60px;
+}
+
 .details-v1-page main .details .summary-detail {
   width: 32%;
 }

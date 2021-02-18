@@ -38,12 +38,22 @@
                     .card-shipment { // media
                         margin-bottom: 30px;
                     }
-                    .add-item {
+                    .add-item { // media
                         img {margin-left: 8px;}
                         margin-bottom: 20px;
                     }
                     .parag1 {  // media
                         margin-bottom: 28px;
+                    }
+                    .parag2 {// media
+                        margin-bottom:  48px;
+                        h4 {display: inline;}
+                    }
+                }
+                .pick-options-dt {
+                    .ship-date { // media
+                        width: 50%;
+                        margin-bottom: 60px;
                     }
                 }
             }

@@ -127,30 +127,40 @@
                     <p class="medium parag1">Not sure if your package matches our shipment regulations?
                         <span class="large"> Check it here </span>
                     </p>
-                    <p class="medium parag2">
+                    <div class="medium parag2">
                         <h4>Note:</h4> We identifier the courier service provider that offers the most convenient
                             price for the number of items and the weights you had selected. The same courier
                             company will collect all your parcels.
-                        </p>
+                    </div>
                 </div> 
                 <div class="pick-options-dt">
                     <h2>Pickup Options</h2>
                     <p class="medium">When do you want the pickup to take place?</p>
-                    <label class="large" >Pick-Up Date</label>
-                    <input class="form-control" type="text" placeholder="dd.mm.yy" onfocus="(this.type='date')"> 
+                    <div class="ship-date">
+                        <label class="large" >Pick-Up Date</label>
+                        <input class="form-control" type="text" placeholder="dd.mm.yy" onfocus="(this.type='date')">    
+                    </div>
                 </div>
                 <div class="contact-details">
                     <h2>Contact Details</h2>
                     <p class="medium">You will recieve an order confirmation on this email address when you’re done with the payment</p>
-                    <!--------------------------------  Name & Surname -------------------------------->
-                    <label class="large"  for="name"> Name & Surname </label>
-                    <input type="text" class="form-control" id="name" placeholder="Ex. Jhon">
-                    <!--------------------------------  Email Address -------------------------------->
-                    <label class="large"  for="Email-Address">Email Address </label>
-                    <input type="email" class="form-control" id="Email-Address" placeholder="Name@domain.com">
-                    <!--------------------------------  Phone Number -------------------------------->
-                    <label class="large"  for="Phone Number"> Phone Number </label>
-                    <input type="text" class="form-control" id="name" placeholder="+1   123 456 7890">
+                    <div>
+                        <!--------------------------------  Name & Surname -------------------------------->
+                        <div>
+                        <label class="large"  for="name"> Name & Surname </label>
+                            <input type="text" class="form-control" id="name" placeholder="Ex. Jhon"> 
+                        </div>
+                        <!--------------------------------  Email Address -------------------------------->
+                        <div>
+                            <label class="large"  for="Email-Address">Email Address </label>
+                            <input type="email" class="form-control" id="Email-Address" placeholder="Name@domain.com">  
+                        </div>
+                        <!--------------------------------  Phone Number -------------------------------->
+                        <div>
+                            <label class="large"  for="Phone Number"> Phone Number </label>
+                            <input type="text" class="form-control" id="name" placeholder="+1   123 456 7890">  
+                        </div>
+                    </div>
                     <!--  Special Notes (Optional)-->
                     <p class="large">Special Notes (Optional)</p>
                     <textarea class="form-control" id="Textarea2" rows="3" placeholder="">Placeholder</textarea>
