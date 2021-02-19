@@ -2,18 +2,20 @@
     position: relative;
     background: #FFFFFF ;
     @include flex (center, flex-start);
-  
     main { 
         width: 100%;
         max-width: 1440px;
         margin: 55px 150px;
-        display: flex;
+        // display: flex;
+        display: none;
         flex-direction: column;
         h1 { margin-bottom: 38px; }
+        border: 1px solid;
         .details {
             @include flex(space-between, flex-start);
             border-bottom: 1px solid $cloudy-blue;
-            margin-bottom: 19px;      
+            margin-bottom: 19px;
+            display: none;     
             .details-inputs {
                 width: 65%;
                 .pick-details {
@@ -66,12 +68,12 @@
                 flex-direction: column;
                 .details-inputs {
                     width: 100%;
-                    .pick-details {margin-bottom: 40px;}
+                    .pick-details {margin-bottom: 30px;}
                     .contact-details {
-                        .condition {margin-bottom: 40px;}
+                        .condition {margin-bottom: 30px;}
                     }
                     .shipment-details { 
-                        .parag2 {margin-bottom: 40px;}
+                        .parag2 {margin-bottom: 30px;}
                     }
                     .pick-options-dt {
                         .ship-date { margin-bottom: 30px; }

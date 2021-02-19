@@ -8206,6 +8206,17 @@ h5 {
   color: #575482;
 }
 
+.small {
+  font-family: "Manrope Bold";
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.2;
+  letter-spacing: 0.3px;
+  text-align: left;
+  color: #0f0a4d;
+  margin-bottom: 6px;
+}
+
 .x-large {
   font-family: "Manrope Medium";
   font-size: 24px;
@@ -8401,6 +8412,17 @@ select {
   background: linear-gradient(180deg, #0071FF 0%, #0054BE 100%);
   border-radius: 4px;
   text-align: center;
+}
+
+.sign-in {
+  padding: 11px 18px;
+  width: 92px;
+  height: 39px;
+  background: #0071FF;
+  border: 1px solid #0071FF;
+  box-sizing: border-box;
+  border-radius: 2px;
+  color: #ffffff;
 }
 
 input[type="date"]::-webkit-calendar-picker-indicator {
@@ -8652,7 +8674,7 @@ select {
 @media (max-width: 1474px) {
   .optional-services .cards .card-optional {
     width: 30%;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
 }
 
@@ -8967,6 +8989,165 @@ select {
   }
 }
 
+.van-cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.van-cards .card-van {
+  background: #FFFFFF;
+  border: 1px solid #b7b6ca;
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 48%;
+}
+
+.van-cards .card-van .van-header {
+  padding: 24px 16px 18px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.van-cards .card-van .van-header .header-icon {
+  margin-right: 16px;
+}
+
+.van-cards .card-van .van-header .header-text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.van-cards .card-van .van-content {
+  padding: 20px 20px 0;
+  border-top: 1px solid #b7b6ca;
+  background: #f9f9fc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-radius: 0px 0px 6px 6px;
+}
+
+.van-cards .card-van .van-content .van-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.van-cards .card-van .van-content .van-info .info-icon {
+  margin-right: 5px;
+}
+
+.van-cards .card-van .van-content .van-info .info-value {
+  margin-bottom: 6px;
+}
+
+@media (max-width: 992px) {
+  .van-cards {
+    margin-bottom: 30px;
+    flex-direction: column;
+  }
+  .van-cards .card-van:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .van-cards .card-van {
+    width: 100%;
+  }
+}
+
+header {
+  border: 1px solid;
+  width: 100%;
+  max-width: 1440px;
+  margin: 18px 150px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header .logo-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .steps {
+  border: 1px;
+  background: #e6f1ff;
+  margin: 25px 0 46px;
+  padding: 25px 0px 45px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+}
+
+header .steps .step {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  width: 17%;
+}
+
+header .steps .step a {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+header .steps .step a span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #e6f1ff;
+  border: 1px solid #6F6C94;
+}
+
+header .steps .step a p {
+  position: absolute;
+  top: 45px;
+  color: #0f0a4d;
+}
+
+header .steps .step a .completed {
+  left: -23px;
+}
+
+header .steps .step .a-after {
+  width: 100%;
+  height: 1px;
+  background-color: #6F6C94;
+}
+
+header .steps .completed-step a span {
+  background: #3bb273;
+  color: #ffffff;
+  border-color: #3bb273;
+}
+
+header .steps .completed-step a p {
+  color: #3bb273;
+  font-family: "Manrope SemiBold";
+}
+
+header .steps .active-step a span {
+  background: #0f0a4d;
+  color: #ffffff;
+}
+
+header .steps .active-step a p {
+  color: #0f0a4d;
+  font-family: "Manrope SemiBold";
+}
+
 .about-page {
   position: relative;
   background: #FBFDFF;
@@ -9168,8 +9349,9 @@ select {
   width: 100%;
   max-width: 1440px;
   margin: 55px 150px;
-  display: flex;
+  display: none;
   flex-direction: column;
+  border: 1px solid;
   /****************************** desktop-large ***************************/
 }
 
@@ -9183,6 +9365,7 @@ select {
   align-items: flex-start;
   border-bottom: 1px solid #b7b6ca;
   margin-bottom: 19px;
+  display: none;
 }
 
 .details-v1-page main .details .details-inputs {
@@ -9265,13 +9448,13 @@ select {
     width: 100%;
   }
   .details-v1-page main .details .details-inputs .pick-details {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   .details-v1-page main .details .details-inputs .contact-details .condition {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   .details-v1-page main .details .details-inputs .shipment-details .parag2 {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
   .details-v1-page main .details .details-inputs .pick-options-dt .ship-date {
     margin-bottom: 30px;
@@ -9339,6 +9522,31 @@ select {
 @media (max-width: 576px) {
   .details-v1-page main {
     margin: 70px 20px;
+  }
+}
+
+.optional-v2 {
+  width: 100%;
+}
+
+.optional-v2 h4 {
+  margin-bottom: 16px;
+}
+
+.optional-v2 .cards {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.optional-v2 .cards > * {
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+
+@media (max-width: 992px) {
+  .optional-v2 .cards {
+    flex-direction: column;
   }
 }
 
