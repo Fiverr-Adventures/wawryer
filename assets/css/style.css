@@ -8389,6 +8389,7 @@ select {
   box-sizing: border-box;
   border-radius: 4px;
   text-align: center;
+  color: #27225f;
 }
 
 .book-service {
@@ -8475,6 +8476,10 @@ select {
   margin-top: 10px;
 }
 
+.cards .card-pick.clicked {
+  border: 2px solid #0071ff;
+}
+
 @media (max-width: 992px) {
   .cards .card-pick {
     width: 100%;
@@ -8543,12 +8548,9 @@ select {
   }
 }
 
-.pick-options {
-  width: 100%;
-}
-
-.pick-options .cards .card-option {
+.cards .card-option {
   /*********************** Start card-option *************************************/
+  cursor: pointer;
   width: 20%;
   margin-right: auto;
   background: #FFFFFF;
@@ -8560,72 +8562,88 @@ select {
   /****************** End card-option ***********************************************/
 }
 
-.pick-options .cards .card-option:last-child {
+.cards .card-option:last-child {
   width: 30%;
   margin-left: auto;
   margin-right: 0;
 }
 
-.pick-options .cards .card-option .option-header {
+.cards .card-option .option-header {
   background: #e7e7ed;
   margin-bottom: 6px;
   padding: 16px 0;
   text-align: center;
 }
 
-.pick-options .cards .card-option .option-content {
+.cards .card-option .option-content {
   padding: 16px 16px 0px;
 }
 
-.pick-options .cards .card-option .option-content .option-item:not(:last-child) {
+.cards .card-option .option-content .option-item:not(:last-child) {
   border-bottom: 1px solid #e7e7ed;
 }
 
-.pick-options .cards .card-option .option-content .option-item {
+.cards .card-option .option-content .option-item {
   color: #575482;
 }
 
-.pick-options .cards .card-option .option-content .option-item:not(:first-child) {
+.cards .card-option .option-content .option-item:not(:first-child) {
   padding-top: 9px;
 }
 
-.pick-options .cards .card-option .option-content .option-item:not(:last-child) {
+.cards .card-option .option-content .option-item:not(:last-child) {
   padding-bottom: 9px;
 }
 
-.pick-options .cards .card-option .option-footer {
+.cards .card-option .option-footer {
   padding: 123px 16px 24px;
 }
 
+.cards .card-option.clicked {
+  border: 2px solid #0071ff;
+}
+
+.cards .card-option.clicked .option-header {
+  background: #0071ff;
+  color: #FFFFFF;
+}
+
+.cards .card-option.clicked .select-service {
+  background: linear-gradient(180deg, #0071FF 0%, #0054BE 100%);
+  border-color: #0071FF;
+  color: #ffffff;
+  font-family: "Manrope SemiBold";
+}
+
 @media (max-width: 1474px) {
-  .pick-options .cards .card-option {
+  .cards .card-option {
     width: 45%;
     margin-right: 0;
     margin-bottom: 30px;
   }
-  .pick-options .cards .card-option:last-child {
+  .cards .card-option:last-child {
     width: 45%;
   }
 }
 
 @media (max-width: 992px) {
-  .pick-options .cards .card-option {
+  .cards .card-option {
     width: 100%;
   }
-  .pick-options .cards .card-option:last-child {
+  .cards .card-option:last-child {
     width: 100%;
     margin-bottom: 0px;
   }
 }
 
 @media (max-width: 576px) {
-  .pick-options .cards .card-option .option-footer {
+  .cards .card-option .option-footer {
     padding-top: 51px;
   }
 }
 
 @media (max-width: 1474px) {
-  .pick-options .cards {
+  .cards {
     flex-wrap: wrap;
   }
 }
@@ -9062,45 +9080,67 @@ select {
 }
 
 header {
-  border: 1px solid;
-  width: 100%;
-  max-width: 1440px;
-  margin: 18px 150px 0;
   display: flex;
   flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 
 header .logo-button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 1440px;
+  padding: 18px 150px;
 }
 
-header .steps {
-  border: 1px;
+@media (max-width: 768px) {
+  header .logo-button {
+    padding: 18px 80px;
+  }
+}
+
+@media (max-width: 576px) {
+  header .logo-button {
+    padding: 18px 20px;
+  }
+}
+
+header .full-screen {
   background: #e6f1ff;
-  margin: 25px 0 46px;
-  padding: 25px 0px 45px;
-  display: flex;
+  width: 100%;
+  margin-bottom: 46px;
+}
+
+header .full-screen .steps {
   position: relative;
+  display: flex;
   justify-content: center;
+  align-items: center;
+  padding: 25px 150px 45px;
+  max-width: 1440px;
+  margin: auto;
 }
 
-header .steps .step {
+header .full-screen .steps .step:not(:last-child) {
+  width: 20%;
+}
+
+header .full-screen .steps .step {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   position: relative;
-  width: 17%;
 }
 
-header .steps .step a {
+header .full-screen .steps .step a {
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
-header .steps .step a span {
+header .full-screen .steps .step a span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9111,55 +9151,80 @@ header .steps .step a span {
   border: 1px solid #6F6C94;
 }
 
-header .steps .step a p {
+header .full-screen .steps .step a p {
   position: absolute;
   top: 45px;
   color: #0f0a4d;
 }
 
-header .steps .step a .completed {
-  left: -23px;
+header .full-screen .steps .step a .completed {
+  white-space: nowrap;
 }
 
-header .steps .step .a-after {
+header .full-screen .steps .step .a-after {
   width: 100%;
   height: 1px;
   background-color: #6F6C94;
 }
 
-header .steps .completed-step a span {
+header .full-screen .steps .completed-step a span {
   background: #3bb273;
   color: #ffffff;
   border-color: #3bb273;
 }
 
-header .steps .completed-step a p {
+header .full-screen .steps .completed-step a p {
   color: #3bb273;
   font-family: "Manrope SemiBold";
 }
 
-header .steps .active-step a span {
+header .full-screen .steps .active-step a span {
   background: #0f0a4d;
   color: #ffffff;
 }
 
-header .steps .active-step a p {
+header .full-screen .steps .active-step a p {
   color: #0f0a4d;
   font-family: "Manrope SemiBold";
+}
+
+@media (max-width: 768px) {
+  header .full-screen {
+    margin-bottom: 41px;
+  }
+  header .full-screen .steps {
+    padding: 20px 80px 45px;
+  }
+  header .full-screen .steps .step:not(:last-child) {
+    width: 100%;
+  }
+  header .full-screen .steps .step a span {
+    width: 30px;
+    height: 30px;
+  }
+  header .full-screen .steps .step a p:not(.active-step) {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  header .full-screen .steps {
+    padding: 20px 20px 40px;
+  }
 }
 
 .about-page {
   position: relative;
   background: #FBFDFF;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
 }
 
 .about-page main {
   width: 100%;
   max-width: 1440px;
-  margin: 55px 150px;
+  padding: 0px 150px;
   display: flex;
   flex-direction: column;
   /*******************************   tablet-landscape-down   *************************************/
@@ -9200,18 +9265,6 @@ header .steps .active-step a p {
 }
 
 @media (max-width: 992px) {
-  .about-page main {
-    padding: 12px 16px;
-  }
-}
-
-@media (max-width: 992px) and (max-width: 768px) {
-  .about-page main {
-    margin: 70px 80px;
-  }
-}
-
-@media (max-width: 992px) {
   .about-page main .cards {
     flex-direction: column;
   }
@@ -9236,9 +9289,15 @@ header .steps .active-step a p {
   }
 }
 
+@media (max-width: 768px) {
+  .about-page main {
+    padding: 0 80px;
+  }
+}
+
 @media (max-width: 576px) {
   .about-page main {
-    margin: 70px 20px;
+    padding: 0 20px;
   }
 }
 
@@ -9327,13 +9386,13 @@ header .steps .active-step a p {
 
 @media (max-width: 768px) {
   .options-page main {
-    margin: 70px 80px;
+    padding: 0 80px;
   }
 }
 
 @media (max-width: 576px) {
   .options-page main {
-    margin: 70px 20px;
+    padding: 0 20px;
   }
 }
 
@@ -9476,7 +9535,7 @@ header .steps .active-step a p {
 
 @media (max-width: 768px) {
   .details-v1-page main {
-    margin: 70px 80px;
+    padding: 0 80px;
   }
   .details-v1-page main .details {
     flex-direction: column;
@@ -9521,7 +9580,7 @@ header .steps .active-step a p {
 
 @media (max-width: 576px) {
   .details-v1-page main {
-    margin: 70px 20px;
+    padding: 0 20px;
   }
 }
 
@@ -9758,7 +9817,7 @@ header .steps .active-step a p {
 
 @media (max-width: 768px) {
   .payement-page main {
-    margin: 70px 80px;
+    padding: 0 80px;
   }
   .payement-page main .payment .pay-process .card-types {
     width: 100%;
@@ -9785,7 +9844,7 @@ header .steps .active-step a p {
 
 @media (max-width: 576px) {
   .payement-page main {
-    margin: 70px 20px;
+    padding: 0 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

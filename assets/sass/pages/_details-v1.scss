@@ -87,7 +87,7 @@
             .details {.summary-detail { width: 100%;}  }  
         }
         @include for-size(tablet-portrait-down) {
-            margin: 70px 80px;
+            padding: 0 80px;
             .details {
                 flex-direction: column;
                 .details-inputs {
@@ -120,7 +120,7 @@
             .pay-now{ margin-top: 11px;}
         }
         @include for-size(phone-only) {
-            margin: 70px 20px;
+            padding: 0 20px;
         }
     }
 }

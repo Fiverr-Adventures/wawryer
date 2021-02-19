@@ -1,8 +1,9 @@
-.pick-options{
-    width: 100%;
+// .pick-options{
+//     width: 100%;
     .cards {   
         .card-option {
             /*********************** Start card-option *************************************/
+            cursor: pointer;
             width: 20%;
             margin-right: auto;
             &:last-child {
@@ -38,7 +39,19 @@
             .option-footer {
                 padding: 123px 16px 24px;
             }
-
+            &.clicked {
+                border: 2px solid $bright-blue;
+                .option-header {
+                    background: $bright-blue;
+                    color: #FFFFFF;
+                }
+                .select-service {
+                    background: linear-gradient(180deg, #0071FF 0%, #0054BE 100%);
+                    border-color: #0071FF;
+                    color: $white;
+                    font-family: $primary-semibold
+                }
+            }
             /*****************************  desktop-large ****************************** */
             @include for-size(desktop-large) { 
                  width: 45%;
@@ -70,4 +83,4 @@
         } 
         
     }
-}
+// }

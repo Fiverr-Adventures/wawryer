@@ -22,6 +22,9 @@
         .pick-content {
             margin-top: 10px;
         }
+        &.clicked {
+            border: 2px solid $bright-blue;
+        }
         /*****************************  tablet-landscape-down ***************************** */
         @include for-size(tablet-landscape-down) {
             width: 100%;

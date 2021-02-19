@@ -1,73 +1,114 @@
 header {
-    border: 1px solid;
-    width: 100%;
-    max-width: 1440px;
-    margin: 18px 150px 0;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    align-items: center;
     .logo-button {
-        @include flex(space-between, center)
+        @include flex(space-between, center);
+        width: 100%;
+        max-width: 1440px;
+        padding: 18px 150px;
+        @include for-size(tablet-portrait-down) {
+            padding: 18px 80px;
+        }
+        @include for-size(phone-only) {
+            padding: 18px 20px;
+        }
     }
-    .steps {
-        border: 1px;
+    .full-screen {
         background: $ice-blue;
-        margin: 25px 0 46px;
-        padding: 25px 0px 45px;
-        display: flex;
-        position: relative;
-        justify-content: center;
-        .step {
-            @include flex(flex-start, center);
+        width: 100%;
+        margin-bottom: 46px;
+        .steps {
             position: relative;
-            width: 17%;
-            a {
+            @include flex(center, center);
+            padding: 25px 150px 45px;
+            max-width: 1440px;
+            margin: auto;
+            @include not-last-child (".step") {
+                width: 20%;
+            }
+            .step {
                 @include flex(flex-start, center);
-                span {
-                    @include flex(center, center);
+                position: relative;
+                a {
+                    @include flex(flex-start, center);
+                    span {
+                        @include flex(center, center);
+                        //media
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 50%;
+                        background: $ice-blue;
+                        border: 1px solid #6F6C94;
+                    }
+                    p {
+                        position: absolute;
+                        top: 45px;
+                        color: $dark-indigo;
+                    }
+                    .completed { 
+                        // left: -23px;
+                        white-space: nowrap;
+                    }
+                }
+                .a-after {
                     //media
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 50%;
-                    background: $ice-blue;
-                    border: 1px solid #6F6C94;
+                    width: 100%;
+                    height: 1px;
+                    background-color:  #6F6C94;
                 }
-                p {
-                    position: absolute;
-                    top: 45px;
-                    color: $dark-indigo;
-                }
-                .completed { left: -23px;}
             }
-            .a-after {
-                 //media
-                width: 100%;
-                height: 1px;
-                background-color:  #6F6C94;
+            .completed-step {
+                a {
+                    span {
+                        background: $dark-seafoam-green;
+                        color: $white;
+                        border-color: $dark-seafoam-green;
+                    }
+                    p {
+                        color: $dark-seafoam-green;
+                        font-family: $primary-semibold;
+                    }
+                } 
+            }
+            .active-step {
+                a {
+                    span {
+                        background: $dark-indigo; 
+                        color: $white;
+                    }
+                    p {
+                        color: $dark-indigo;
+                        font-family: $primary-semibold;
+                    }
+                }
             }
         }
-        .completed-step {
-            a {
-                span {
-                    background: $dark-seafoam-green;
-                    color: $white;
-                    border-color: $dark-seafoam-green;
+        @include for-size(tablet-portrait-down) {
+            margin-bottom: 41px;
+            .steps{
+                padding: 20px 80px 45px;
+                @include not-last-child (".step") {
+                    width: 100%;
                 }
-                p {
-                    color: $dark-seafoam-green;
-                    font-family: $primary-semibold;
+                .step {
+                    a {
+                        span {
+                            width: 30px;
+                            height: 30px;
+                        }
+                        p:not(.active-step) {
+                            display: none;
+                        }
+                    }   
                 }
-            } 
+            }
         }
-        .active-step {
-            a {
-                span {
-                    background: $dark-indigo; 
-                    color: $white;
-                }
-                p {
-                    color: $dark-indigo;
-                    font-family: $primary-semibold;
-                }
+        @include for-size(phone-only) {
+            .steps{
+                padding: 20px 20px 40px;
+
             }
         }
     }

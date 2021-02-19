@@ -1,19 +1,16 @@
-$(() => {
-	$('[data-toggle="tooltip"]').tooltip();
+/******************** add class card-pick ********************/
+$(".card-pick").on("click", function(){
+	let cardList = $(".card-pick")
+	for (let index = 0; index < cardList.length; index++) {
+		$(cardList[index]).removeClass("clicked");
+	}
+	$(this).addClass("clicked");
 });
-
-// Ripple Button Effect
-const root = document.documentElement;
-document.addEventListener("mousedown", ev => {
-	const el = ev.target,
-		top = 0,
-		left = 0;
-	do {
-		top += el.offsetTop;
-		left += el.offsetLeft;
-	} while (el = el.offsetParent);
-	const x = (ev.clientX - left) / ev.target.offsetWidth;
-	const y = (ev.clientY - top) / ev.target.offsetHeight;
-	root.style.setProperty("--ripple-x", x);
-	root.style.setProperty("--ripple-y", y);
-});
+/********************* add class card-option ********************/
+// $(".card-option").on("click", function(){
+// 	let cardList = $(".card-option")
+// 	for (let index = 0; index < cardList.length; index++) {
+// 		$(cardList[index]).removeClass("clicked");
+// 	}
+// 	$(this).addClass("clicked");
+// });
