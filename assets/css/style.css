@@ -9356,6 +9356,7 @@ select {
   margin: 55px 150px;
   display: flex;
   flex-direction: column;
+  /*******************************   tablet-landscape-down   *************************************/
 }
 
 .payement-page main h1 {
@@ -9373,7 +9374,6 @@ select {
   padding: 25px 32px 69px 33px;
   background: #f9f9fc;
   border-radius: 6px;
-  border: 1px solid;
 }
 
 .payement-page main .payment .pay-process .parag1-pay {
@@ -9442,5 +9442,142 @@ select {
 
 .payement-page main .payment .summary-payement {
   width: 32%;
+}
+
+@media (max-width: 1474px) {
+  .payement-page main .payment .pay-process {
+    width: 60%;
+    padding: 25px 22px 69px 23px;
+  }
+  .payement-page main .payment .pay-process .card-types {
+    width: 55%;
+  }
+  .payement-page main .payment .pay-process .card-types .bordered-card {
+    width: 60px;
+  }
+  .payement-page main .payment .pay-process .card-number {
+    width: 70%;
+  }
+  .payement-page main .payment .pay-process .expiry-date {
+    width: 70%;
+  }
+  .payement-page main .payment .pay-process .expiry-date > div {
+    width: 46%;
+  }
+  .payement-page main .payment .pay-process .name-card {
+    width: 70%;
+  }
+  .payement-page main .payment .pay-process .security-code {
+    width: 70%;
+  }
+  .payement-page main .payment .pay-process .security-code > div {
+    width: 46%;
+  }
+  .payement-page main .payment .summary-payement {
+    width: 38%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .payement-page main h1 {
+    margin-bottom: 26px;
+  }
+  .payement-page main .payment {
+    flex-direction: column;
+  }
+  .payement-page main .payment .pay-process {
+    padding: 25px 22px 30px 23px;
+    width: 100%;
+  }
+  .payement-page main .payment .pay-process .parag1-pay {
+    margin-bottom: 18px;
+  }
+  .payement-page main .payment .pay-process .card-types {
+    width: 45%;
+    margin-bottom: 18px;
+  }
+  .payement-page main .payment .pay-process .card-number {
+    width: 60%;
+  }
+  .payement-page main .payment .pay-process .expiry-date {
+    width: 60%;
+    margin: 18px 0;
+  }
+  .payement-page main .payment .pay-process .expiry-date > div {
+    width: 43%;
+  }
+  .payement-page main .payment .pay-process .name-card {
+    width: 60%;
+  }
+  .payement-page main .payment .pay-process .security-code {
+    width: 60%;
+    margin: 18px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  .payement-page main .payment .pay-process .security-code > div {
+    width: 43%;
+  }
+  .payement-page main .payment .summary-payement {
+    width: 100%;
+  }
+}
+
+@media (max-width: 992px) {
+  .payement-page main .payment .pay-process .card-types {
+    width: 65%;
+  }
+  .payement-page main .payment .pay-process .card-number {
+    width: 85%;
+  }
+  .payement-page main .payment .pay-process .expiry-date {
+    width: 85%;
+  }
+  .payement-page main .payment .pay-process .expiry-date > div {
+    width: 43%;
+  }
+  .payement-page main .payment .pay-process .name-card {
+    width: 85%;
+  }
+  .payement-page main .payment .pay-process .security-code {
+    width: 85%;
+  }
+  .payement-page main .payment .pay-process .security-code > div {
+    width: 43%;
+  }
+}
+
+@media (max-width: 768px) {
+  .payement-page main {
+    margin: 70px 80px;
+  }
+  .payement-page main .payment .pay-process .card-types {
+    width: 100%;
+  }
+  .payement-page main .payment .pay-process .card-number {
+    width: 100%;
+  }
+  .payement-page main .payment .pay-process .expiry-date {
+    width: 100%;
+  }
+  .payement-page main .payment .pay-process .expiry-date > div {
+    width: 43%;
+  }
+  .payement-page main .payment .pay-process .name-card {
+    width: 100%;
+  }
+  .payement-page main .payment .pay-process .security-code {
+    width: 100%;
+  }
+  .payement-page main .payment .pay-process .security-code > div {
+    width: 44%;
+  }
+}
+
+@media (max-width: 576px) {
+  .payement-page main {
+    margin: 70px 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

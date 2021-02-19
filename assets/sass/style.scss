@@ -21,6 +21,7 @@
 @import "components/card5";
 @import "components/order-summary";
 @import "components/card-shipment";
+@import "components/card-van";
 // 5 - Layout;
 @import "layout/header";
 @import "layout/navbar";
@@ -30,4 +31,5 @@
 @import 'pages/about';
 @import 'pages/options';
 @import 'pages/details-v1';
+@import 'pages/details-v2';
 @import 'pages/payement';
