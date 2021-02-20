@@ -115,69 +115,74 @@ function quantityMinus2() {
 	}	
 }
 
-// $("#add-item").click(function(){
-//     $(".shipment-details").append('<div class="card-shipment"
-//                         <div class="ship-header">
-//                             <div class="pack-suit">
-//                                 <img src="./assets/img/icons/Package.svg" alt="package">
-//                                 <h5>Package or Suitcase</h5> 
-//                             </div>
-//                             <img src="./assets/img/icons/trash.svg" alt="trash">
-//                         </div>
-//                         <div class="ship-content">
-//                             <
-//                             <div class="quantity">
-//                                 <button type="button" class="quantity-minus disabled" onclick="quantityMinus()">
-//                                     <div class="btn-disabled qt">
-//                                         <img src="./assets/img/icons/minus.svg" alt="minus">
-//                                     </div>
-//                                 </button>
-//                                 <div class="qt-input">
-//                                     <label class="label1"  for="quantity1"> Quantity </label>
-//                                     <input type="text" id="quantity1" class="form-control" value="1" min="1">   
-//                                 </div>
-//                                 <button type="button" onclick="quantityAdd()" >
-//                                     <div class="btn-active qt">
-//                                         <img src="./assets/img/icons/add.svg" alt="add">
-//                                     </div>
-//                                 </button>
-//                             </div>
-                          
-//                             <div class="type-of-items">
-//                                 <label class="label1"  for="type-items"> Type of items </label>
-//                                 <input type="text" class="form-control" id="type-items" placeholder="Package or suitcase">
-//                             </div>
-                         
-//                             <div class="weight-ship">
-//                                 <label class="label1"  for="Weight"> Weight </label>
-//                                 <input type="text" class="form-control" id="Weight" placeholder="Up to 2Kg">
-//                             </div>
-                          
-//                             <div class="length-ship">
-//                                 <label class="label1"  for="Length"> Length </label>
-//                                 <input type="text" class="form-control" id="Length" placeholder="cm"> 
-//                             </div>
-                          
-//                             <div class="width-ship">
-//                                 <label class="label1"  for="Width"> Width </label>
-//                                 <input type="text" class="form-control" id="Width" placeholder="cm">   
-//                             </div>
-                         
-//                             <div class="height-ship">
-//                                 <label class="label1"  for="Height"> Height </label>
-//                                 <input type="text" class="form-control" id="Height" placeholder="cm">   
-//                             </div>
-//                             <img src="./assets/img/icons/copy.svg" alt="copy" class="copy">
-                           
-//                             <div class="content-ship">
-//                                 <label class="label1"  for="Content"> Content </label>
-//                                 <input type="text" class="form-control" id="Content" placeholder="/">
-//                             </div>
-                     
-//                             <div class="value-ship">
-//                                <label class="label1"  for="Value"> Value </label>
-//                                 <input type="text" class="form-control" id="Value" placeholder="£">  
-//                             </div>
-//                         </div>
-//                     </div>');
-//   });
+// ADD ITEM
+// var cardShipment = <div class="card-shipment">
+// 	<div class="ship-header">
+//       	<div class="pack-suit">
+// 			<img src="./assets/img/icons/Package.svg" alt="package" />
+// 			<h5>Package or Suitcase</h5> 
+//        </div>
+//       <img src="./assets/img/icons/trash.svg" alt="trash" />
+//     </div>
+// 	<div class="ship-content">                    
+// 		<div class="quantity">
+// 			<button type="button" class="quantity-minus disabled" onclick="quantityMinus()">
+// 				<div class="btn-disabled qt">
+// 					<img src="./assets/img/icons/minus.svg" alt="minus" />
+// 				</div>
+// 			</button>
+// 			<div class="qt-input">
+// 				<label class="label1"  for="quantity1"> Quantity </label>
+// 				<input type="text" id="quantity1" class="form-control" value="1" min="1" />   
+// 			</div>
+// 			<button type="button" onclick="quantityAdd()" >
+// 				<div class="btn-active qt">
+// 					<img src="./assets/img/icons/add.svg" alt="add" />
+// 				</div>
+// 			</button>
+// 		</div>
+		
+// 		<div class="type-of-items">
+// 			<label class="label1"  > Type of items </label>
+// 			<input type="text" class="form-control"  placeholder="Package or suitcase" />
+// 		</div>
+		
+// 		<div class="weight-ship">
+// 			<label class="label1" > Weight </label>
+// 			<input type="text" class="form-control"  placeholder="Up to 2Kg" />
+// 		</div>
+		
+// 		<div class="length-ship">
+// 			<label class="label1" > Length </label>
+// 			<input type="text" class="form-control"  placeholder="cm" /> 
+// 		</div>
+		
+// 		<div class="width-ship">
+// 			<label class="label1"  > Width </label>
+// 			<input type="text" class="form-control" placeholder="cm" />   
+// 		</div>
+		
+// 		<div class="height-ship">
+// 			<label class="label1" > Height </label>
+// 			<input type="text" class="form-control"  placeholder="cm" />   
+// 		</div>
+		
+// 		<img src="./assets/img/icons/copy.svg" alt="copy" class="copy" />
+		
+// 		<div class="content-ship">
+// 			<label class="label1"  > Content </label>
+// 			<input type="text" class="form-control"  placeholder="/" />
+// 		</div>
+
+// 		<div class="value-ship">
+// 			<label class="label1"> Value </label>
+// 			<input type="text" class="form-control"  placeholder="£" />  
+// 		</div>
+// 	</div>
+// </div>
+
+
+
+$(".add-item").click(function(){
+    $(".cards-shipments").append(sooo);
+});
