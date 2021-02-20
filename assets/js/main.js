@@ -6,22 +6,8 @@ $(".card-pick").on("click", function(){
 	}
 	$(this).addClass("clicked");
 });
-/********************* add class card-option ********************/
-$(".card-option").on("click", function(){
-	let cardList = $(".card-option")
-	for (let index = 0; index < cardList.length; index++) {
-		$(cardList[index]).removeClass("clicked");
-		$(cardList[index]).find('button').html('SELECT SERVICE');
-	}
-	if (!$(this).hasClass("order-summary")) {
-		$(this).addClass("clicked");
-		$(this).find('button').html('SELECTED SERVICE');
-	}
-		
-});
 /********************* add class card-optional ******************/
 $('.card-optional').find('input:checkbox').change(function(){
-
 	let cardOptional = $(this).parents().eq(2);
 	let cardList = $(".card-optional");
 	for (let j = 0; j < cardList.length; j++) {
@@ -35,25 +21,10 @@ $('.card-optional').find('input:checkbox').change(function(){
     if($(this).is(":checked")) {
 		$(cardOptional).addClass("clicked");
     }
-	else {	
+	else {
 		$(cardOptional).removeClass("clicked");
 	}
 })
-/********************* add class card-shipment ********************/
-function valueOfItems () {
-
-	let cardList = $(".card-shipment");
-	for (let j = 0; j < cardList.length; j++) {
-		$(cardList[j]).removeClass("clicked");
-	}
-	let btnShipList = $(".btn-ship");
-	for (let index = 0; index < btnShipList.length; index++) {
-		$(btnShipList[index]).css('visibility', 'visible');
-	}
-	// this button that cause the event ??
-	$('.ship-btn').css('visibility', 'hidden');
-	$('.card-shipment').addClass("clicked");
-}
 
 /********************* add class card-van ******************/
 $('.card-van').find('input:checkbox').change(function(){
@@ -71,7 +42,7 @@ $('.card-van').find('input:checkbox').change(function(){
     if($(this).is(":checked")) {
 		$(cardVan).addClass("clicked");
     }
-	else {	
+	else {
 		$(cardVan).removeClass("clicked");
 	}
 });
@@ -84,7 +55,7 @@ function quantityAdd() {
 		$('.quantity-minus').removeClass("disabled");
 		$('.btn-disabled').css('background', "#0f0a4d");
 	}
-		
+
 }
 
 function quantityMinus() {
@@ -94,7 +65,7 @@ function quantityMinus() {
 	if (quantity == 2 && !$('.quantity-minus').hasClass("disabled")) {
 		$('.quantity-minus').addClass("disabled");
 		$('.btn-disabled').css('background', "#575482");
-	}	
+	}
 }
 function quantityAdd2() {
 	var quantity = parseInt($('#quantity2').val());
@@ -102,7 +73,7 @@ function quantityAdd2() {
 	if (quantity > 0 && $('.quantity-minus').hasClass("disabled")) {
 		$('.quantity-minus').removeClass("disabled");
 		$('.btn-disabled2').css('background', "#0f0a4d");
-	}	
+	}
 }
 
 function quantityMinus2() {
@@ -112,7 +83,7 @@ function quantityMinus2() {
 	if (quantity == 2 && !$('.quantity-minus').hasClass("disabled")) {
 		$('.quantity-minus').addClass("disabled");
 		$('.btn-disabled2').css('background', "#575482");
-	}	
+	}
 }
 
 // ADD ITEM
@@ -121,11 +92,11 @@ var cardShipment =` <div class="card-shipment">
 	<div class="ship-header">
       	<div class="pack-suit">
 			<img src="./assets/img/icons/Package.svg" alt="package" />
-			<h5>Package or Suitcase</h5> 
+			<h5>Package or Suitcase</h5>
        </div>
       <img src="./assets/img/icons/trash.svg" alt="trash" />
     </div>
-	<div class="ship-content">                    
+	<div class="ship-content">
 		<div class="quantity">
 			<button type="button" class="quantity-minus disabled" onclick="quantityMinus()">
 				<div class="btn-disabled qt">
@@ -134,7 +105,7 @@ var cardShipment =` <div class="card-shipment">
 			</button>
 			<div class="qt-input">
 				<label class="label1"  for="quantity1"> Quantity </label>
-				<input type="text" id="quantity1" class="form-control" value="1" min="1" />   
+				<input type="text" id="quantity1" class="form-control" value="1" min="1" />
 			</div>
 			<button type="button" onclick="quantityAdd()" >
 				<div class="btn-active qt">
@@ -142,34 +113,34 @@ var cardShipment =` <div class="card-shipment">
 				</div>
 			</button>
 		</div>
-		
+
 		<div class="type-of-items">
 			<label class="label1"  > Type of items </label>
 			<input type="text" class="form-control"  placeholder="Package or suitcase" />
 		</div>
-		
+
 		<div class="weight-ship">
 			<label class="label1" > Weight </label>
 			<input type="text" class="form-control"  placeholder="Up to 2Kg" />
 		</div>
-		
+
 		<div class="length-ship">
 			<label class="label1" > Length </label>
-			<input type="text" class="form-control"  placeholder="cm" /> 
+			<input type="text" class="form-control"  placeholder="cm" />
 		</div>
-		
+
 		<div class="width-ship">
 			<label class="label1"  > Width </label>
-			<input type="text" class="form-control" placeholder="cm" />   
+			<input type="text" class="form-control" placeholder="cm" />
 		</div>
-		
+
 		<div class="height-ship">
 			<label class="label1" > Height </label>
-			<input type="text" class="form-control"  placeholder="cm" />   
+			<input type="text" class="form-control"  placeholder="cm" />
 		</div>
-		
+
 		<img src="./assets/img/icons/copy.svg" alt="copy" class="copy" />
-		
+
 		<div class="content-ship">
 			<label class="label1"  > Content </label>
 			<input type="text" class="form-control"  placeholder="/" />
@@ -177,7 +148,7 @@ var cardShipment =` <div class="card-shipment">
 
 		<div class="value-ship">
 			<label class="label1"> Value </label>
-			<input type="text" class="form-control"  placeholder="£" />  
+			<input type="text" class="form-control"  placeholder="£" />
 		</div>
 	</div>
 </div>`

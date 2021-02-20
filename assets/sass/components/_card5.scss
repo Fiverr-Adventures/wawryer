@@ -2,7 +2,7 @@
     width: 43%;
     .cards {
         .card-shipment {
-            width: 47%;
+            width: 260px;
             background: #FFFFFF;
             border: 1px solid #E6E6E6;
 
@@ -16,14 +16,19 @@
             .shipment-content {
                 padding: 0px 16px;
                 margin-bottom: 55px;
-                // margin-bottom: ;
                 .justify {
                     text-align: center;
+                }
+                b{
+                    color: $dark-indigo;
                 }
             }
             .shipment-footer {
                 padding: 0 16px;
                 padding-bottom: 24px;
+                button{
+                    box-shadow: 0px 20px 24px rgba(#0F0A4D, .05);
+                }
             }
             &.clicked {
                 border:2px solid $bright-blue;
@@ -33,7 +38,7 @@
                 }
             }
              /*****************************  desktop-large ****************************** */
-             @include for-size(desktop-large) { 
+             @include for-size(desktop-large) {
                 width: 45%;
                 margin-bottom: 30px;
            }
