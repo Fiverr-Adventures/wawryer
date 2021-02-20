@@ -15,3 +15,50 @@ input {
 select {
     border: 1px solid $cloudy-blue !important;
 }
+.placeholder-style::-webkit-input-placeholder {
+    	font-family: $primary-medium;
+        font-size: $font-size-sm;
+        font-weight: 500;
+        line-height: 1.6;
+        letter-spacing: 0.5px;
+        text-align: left;
+        color: $deep-lilac;
+  }
+  .placeholder-style::placeholder {
+	font-family: $primary-medium;
+	font-size: $font-size-sm;
+	font-weight: 500;
+	line-height: 1.6;
+	letter-spacing: 0.5px;
+	text-align: left;
+	color: $deep-lilac;
+}  
+.placeholder-style:-ms-input-placeholder {
+	font-family: $primary-medium;
+	font-size: $font-size-sm;
+	font-weight: 500;
+	line-height: 1.6;
+	letter-spacing: 0.5px;
+	text-align: left;
+	color: $deep-lilac;;
+}
+
+.placeholder-style:-moz-placeholder {
+	font-family: $primary-medium;
+	font-size: $font-size-sm;
+	font-weight: 500;
+	line-height: 1.6;
+	letter-spacing: 0.5px;
+	text-align: left;
+	color: $deep-lilac;;
+}
+
+.placeholder-style::-moz-placeholder {
+	font-family: $primary-medium;
+	font-size: $font-size-sm;
+	font-weight: 500;
+	line-height: 1.6;
+	letter-spacing: 0.5px;
+	text-align: left;
+	color: $deep-lilac;;
+}

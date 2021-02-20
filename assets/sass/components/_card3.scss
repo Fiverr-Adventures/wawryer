@@ -40,10 +40,13 @@
                 padding: 123px 16px 24px;
             }
             &.clicked {
+                margin-top: -15px;
                 border: 2px solid $bright-blue;
+                box-shadow: 0px 30px 65px rgba(12, 79, 165, 0.1);
                 .option-header {
+                    padding: 27px 0;
                     background: $bright-blue;
-                    color: #FFFFFF;
+                    h3 {color: #FFFFFF;}
                 }
                 .select-service {
                     background: linear-gradient(180deg, #0071FF 0%, #0054BE 100%);

@@ -25,30 +25,32 @@
 
 <body class="details-v1-page">
     <!-- Start Header -->
-	<header>
+    <header>
         <div class="logo-button">
 			<img src="./assets/img/logo/Logo.svg" alt="logo">
 			<button type="button" class="btn btn-primary button-semi sign-in">SIGN IN</button>
 		</div>
+		<div class="full-screen">
+		
 		<div class="steps">
             <!------------------- Start Step1 ------------------>
-            <div class="completed-step step">
+            <div class="step completed-step">
                 <a href="#step-one">
                     <span class="button-semi">1</span> 
-                    <p class="placeholder"> About </p>
+                    <p class="placeholder active-step"> About </p>
                 </a>
                 <div class="a-after"></div>
             </div>
             <!-------------------  End Step1 ------------------>
             <!------------------- step2 ------------------>
-            <div class="active-step step">
-                <a href="#step-two">
+            <div class="step completed-step">
+                <a href="#step-two" >
                   <span class="button-semi">2</span> 
                   <p class="placeholder"> Options </p>
                 </a>
                 <div class="a-after"></div>
             </div>
-            <div class="step">
+            <div class="step active-step">
                 <a href="#">
                     <span class="button-semi">3</span> 
                     <p class="placeholder"> Details </p>
@@ -69,6 +71,7 @@
                 </a>
             </div>
 		</div>
+	</div>
     </header>
     <!-- End Header -->
 	<main>
@@ -79,17 +82,17 @@
                 <div class="pick-details">
                     <div class="Pickup-Details">
                         <label class="large">Pickup Details</label>
-                        <input type="text" class="form-control" id="country" placeholder="Country: United Kingdom">
-                        <input type="text" class="form-control" id="country">
-                        <input type="text" class="form-control" id="country">
-                        <input type="text" class="form-control" id="country">
+                        <input type="text" class="form-control placeholder-style" id="country" placeholder="Country: United Kingdom">
+                        <input type="text" class="form-control placeholder-style" id="adress" placeholder="Find Address">
+                        <input type="text" class="form-control placeholder-style" id="surname" placeholder="Sender name & Surname">
+                        <input type="text" class="form-control placeholder-style" id="tlfn" placeholder="Sender contact telephone">
                     </div>
                     <div class="Deliver-Details">
                         <label class="large">Deliver Details</label>
-                        <input type="text" class="form-control" id="country">
-                        <input type="text" class="form-control" id="country">
-                        <input type="text" class="form-control" id="country">
-                        <input type="text" class="form-control" id="country">
+                        <input type="text" class="form-control placeholder-style" id="country-send" placeholder="Country: France">
+                        <input type="text" class="form-control placeholder-style" id="adress-send" placeholder="Find Address">
+                        <input type="text" class="form-control placeholder-style" id="surname-send" placeholder="Sender name & Surname">
+                        <input type="text" class="form-control placeholder-style" id="tlfn-send" placeholder="Sender contact telephone">
                     </div>
                 </div>
                 <div class="shipment-details">
@@ -97,16 +100,16 @@
                     <p class="placeholder">Provide details of the items that you want to shop</p>
                     <div class="van-cards">
                     <!-------------------------------- Card Van -------------------------------->
-                    <div class="card-van">
+                    <div class="card-van clicked">
                         <!-- header -->
-                        <div class="van-header">
+                        <div class="van-header checked">
                             <img class="header-icon" src="./assets/img/icons/Box.svg" alt="box">
                             <div class="header-text">
                                 <div>
                                     <h4>Box Van</h4>
                                     <p class="label2">To get a quote, add the pick-up and delivery addresses</p> 
                                 </div>
-                                <input type="checkbox" >
+                                <input type="checkbox" checked>
                             </div>
                         </div>
                         <!-- Content -->
@@ -220,14 +223,14 @@
                     <div class="optional-services optional-v2">
                         <h4>Optional Services</h4>
                         <div class="cards">
-                            <div class="card-optional">
+                            <div class="card-optional clicked">
                                 <div class="optional-header">
                                     <div class="optional-icon">
                                         <img src="./assets/img/icons/optional-icon1.svg" alt="opt1">
                                     </div>
                                     <div class="optional-check">
                                        <p class="button-semi dollar">$9.98</p>
-                                       <input type="checkbox" >
+                                       <input type="checkbox" checked >
                                     </div>
                                 </div>
                                 <div class="optional-content">
@@ -318,7 +321,7 @@
                     </div>
                     <!--  Special Notes (Optional)-->
                     <label class="large">Special Notes (Optional)</label>
-                    <textarea class="form-control" id="Textarea2" rows="3" placeholder="">Placeholder</textarea>
+                    <textarea class="form-control" id="Textarea2" rows="3" placeholder="placeholder"></textarea>
                     <div class="condition">
                         <div class="form-group form-check">
                             <input type="checkbox" class="form-check-input" id="Check1">

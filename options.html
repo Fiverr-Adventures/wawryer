@@ -24,15 +24,54 @@
 </head>
 
 <body class="options-page">
-	<!-- <header>
-		<div>
-			<img src="" alt="logo">
-			<button type="button" class="btn btn-primary button-semi">SIGN IN</button>
+	<header>
+        <div class="logo-button">
+			<img src="./assets/img/logo/Logo.svg" alt="logo">
+			<button type="button" class="btn btn-primary button-semi sign-in">SIGN IN</button>
 		</div>
+		<div class="full-screen">
+		
 		<div class="steps">
-
+            <!------------------- Start Step1 ------------------>
+            <div class="step completed-step">
+                <a href="#step-one">
+                    <span class="button-semi">1</span> 
+                    <p class="placeholder active-step"> About </p>
+                </a>
+                <div class="a-after"></div>
+            </div>
+            <!-------------------  End Step1 ------------------>
+            <!------------------- step2 ------------------>
+            <div class="step active-step">
+                <a href="#step-two" >
+                  <span class="button-semi">2</span> 
+                  <p class="placeholder"> Options </p>
+                </a>
+                <div class="a-after"></div>
+            </div>
+            <div class="step">
+                <a href="#">
+                    <span class="button-semi">3</span> 
+                    <p class="placeholder"> Details </p>
+                </a>
+                <div class="a-after"></div>
+            </div>
+            <div class="step">
+                <a href="#">
+                    <span class="button-semi">4</span> 
+                    <p class="placeholder"> Payment </p>
+                </a>
+                <div class="a-after"></div>
+            </div>
+            <div class="step">
+                <a href="#">
+                    <span class="button-semi">5</span> 
+                    <p class="placeholder completed"> Order Complete </p>
+                </a>
+            </div>
 		</div>
-    </header> -->
+	</div>
+    </header>
     <!-- <form action="/action_page.php" method="get"></form> -->
 	<main> 
         <div class="pick-options">
@@ -69,7 +108,7 @@
                     </div>
                     <div class="option-footer">
                         <p class="x-large">$285</p>
-                        <button type="button" class="btn button-med-3 select-service ">SELECT SERVICE</button>
+                        <button type="button" class="btn button-med-3 select-service ">SELECTED SERVICE</button>
                     </div>
                 </div>
                 <div class="card-option">
@@ -130,14 +169,14 @@
         <div class="optional-services">
             <h4>Optional Services</h4>
             <div class="cards">
-                <div class="card-optional">
+                <div class="card-optional clicked">
                     <div class="optional-header">
                         <div class="optional-icon">
                             <img src="./assets/img/icons/optional-icon1.svg" alt="opt1">
                         </div>
                         <div class="optional-check">
                            <p class="button-semi dollar">$9.98</p>
-                           <input type="checkbox" aria-label="Checkbox for following text input">
+                           <input type="checkbox" checked aria-label="1">
                         </div>
                     </div>
                     <div class="optional-content">
@@ -155,7 +194,7 @@
                         </div>
                         <div class="optional-check">
                            <p class="button-semi dollar">$9.98</p>
-                           <input type="checkbox" aria-label="Checkbox for following text input">
+                           <input type="checkbox" aria-label="2">
                         </div>
                     </div>
                     <div class="optional-content">
@@ -173,7 +212,7 @@
                         </div>
                         <div class="optional-check">
                            <p class="button-semi dollar">$9.98</p>
-                           <input type="checkbox" aria-label="Checkbox for following text input">
+                           <input type="checkbox" aria-label="3">
                         </div>
                     </div>
                     <div class="optional-content">
@@ -190,7 +229,7 @@
         <div class="shipment-protection">
             <h2>Shipment Protection</h2>
             <div class="cards">
-                <div class="card-shipment">
+                <div class="card-shipment clicked">
                     <div class="shipment-header">
                         <h3>ENHANCED PROTECTION</h3>
                     </div>
@@ -200,7 +239,8 @@
                         </p> 
                     </div>
                     <div class="shipment-footer">
-                        <button type="button" class="btn button-med-3 select-service ">VALUE OF ITEMS</button>
+                        <button id='btn-ship1' type="button" class="btn button-med-3 select-service
+                        ship-btn" onclick="valueOfItems()" style="visibility: hidden;"> VALUE OF ITEMS</button>
                     </div>
                 </div>
                 <div class="card-shipment">
@@ -213,7 +253,8 @@
                         </p> 
                     </div>
                     <div class="shipment-footer">
-                        <button type="button" class="btn button-med-3 select-service ">VALUE OF ITEMS</button>
+                        <button id='btn-ship2' type="button" class="btn button-med-3 select-service 
+                        ship-btn" onclick="valueOfItems()"> VALUE OF ITEMS</button>
                     </div>
                 </div>
             </div>

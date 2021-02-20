@@ -2,11 +2,13 @@
     position: relative;
     background: #FBFDFF;
     @include flex (center, flex-start);
-  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     main { 
         width: 100%;
         max-width: 1440px;
-        margin: 55px 150px;
+        padding: 0px 150px;
         display: flex;
         flex-direction: column;
         .pick-options {

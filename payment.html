@@ -24,15 +24,54 @@
 </head>
 
 <body class="payement-page">
-	<!-- <header>
-		<div>
-			<img src="" alt="logo">
-			<button type="button" class="btn btn-primary button-semi">SIGN IN</button>
+    <header>
+        <div class="logo-button">
+			<img src="./assets/img/logo/Logo.svg" alt="logo">
+			<button type="button" class="btn btn-primary button-semi sign-in">SIGN IN</button>
 		</div>
+		<div class="full-screen">
+		
 		<div class="steps">
-
+            <!------------------- Start Step1 ------------------>
+            <div class="step completed-step">
+                <a href="#step-one">
+                    <span class="button-semi">1</span> 
+                    <p class="placeholder active-step"> About </p>
+                </a>
+                <div class="a-after"></div>
+            </div>
+            <!-------------------  End Step1 ------------------>
+            <!------------------- step2 ------------------>
+            <div class="step completed-step">
+                <a href="#step-two" >
+                  <span class="button-semi">2</span> 
+                  <p class="placeholder"> Options </p>
+                </a>
+                <div class="a-after"></div>
+            </div>
+            <div class="step completed-step">
+                <a href="#">
+                    <span class="button-semi">3</span> 
+                    <p class="placeholder"> Details </p>
+                </a>
+                <div class="a-after"></div>
+            </div>
+            <div class="step active-step">
+                <a href="#">
+                    <span class="button-semi">4</span> 
+                    <p class="placeholder"> Payment </p>
+                </a>
+                <div class="a-after"></div>
+            </div>
+            <div class="step">
+                <a href="#">
+                    <span class="button-semi">5</span> 
+                    <p class="placeholder completed"> Order Complete </p>
+                </a>
+            </div>
 		</div>
-    </header> -->
+	</div>
+    </header>
     <!-- <form action="/action_page.php" method="get"></form> -->
 	<main> 
         <h1>To Pickup from MANCHESTER UK and Deliver to PARIS FRANCE</h1>
@@ -55,12 +94,12 @@
                 </div>
                 <div class="form-group card-number">
                     <label for="card-num" class="large">Card Number</label>
-                    <input type="text" class="form-control" id="card-num" placeholder="xxxx xxxx xxxx xxxx">
+                    <input type="text" class="form-control placeholder-style" id="card-num" placeholder="xxxx xxxx xxxx xxxx">
                 </div>
                 <div class="expiry-date">
                     <div class="form-group month">
                         <label for="exMonth" class="large">Expiry Date</label>
-                        <select id="exMonth" class="form-control">
+                        <select id="exMonth" class="form-control placeholder">
                             <option value="0" selected>MM</option>
                             <option value="01">January</option>
                             <option value="02">February</option>
@@ -103,12 +142,12 @@
                 </div>
                 <div class="name-card">
                     <label class="large">Name on Card</label>
-                    <input type="text" class="form-control" placeholder="Name as it appears on the card">  
+                    <input type="text" class="form-control placeholder-style" placeholder="Name as it appears on the card">  
                 </div>
                 <div class="security-code">
                     <div class="secure-code">
                         <label class="large">Security Code</label>
-                        <input type="text" class="form-control" placeholder="CVV code">  
+                        <input type="text" class="form-control placeholder-style" placeholder="CVV code">  
                     </div>
                     <div>
                         <img src="./assets/img/icons/security-code.svg" alt="security code">
@@ -117,7 +156,7 @@
                 <div class="form-group form-check">
                     <input type="checkbox" class="form-check-input" id="Check1">
                     <label class="form-check-label placeholder" for="Check1">I have read and agree to the
-                      <span class="large"></span>  WAWRYER Terms of Use.</label>
+                      <span class="large">WAWRYER Terms of Use</span>.</label>
                 </div>
                 
             </div>  

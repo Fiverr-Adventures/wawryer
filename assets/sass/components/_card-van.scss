@@ -40,6 +40,12 @@
                 }
             }
         }
+        &.clicked {
+            border: 2px solid $bright-blue;
+            .van-content {
+                background-color: #f4f9ff;
+            }
+        }
     }
     @include for-size(tablet-landscape-down) {
             margin-bottom: 30px;

@@ -25,6 +25,13 @@
                 padding: 0 16px;
                 padding-bottom: 24px;
             }
+            &.clicked {
+                border:2px solid $bright-blue;
+                .shipment-header {
+                    background: $bright-blue;
+                    h3 {color: $white;}
+                }
+            }
              /*****************************  desktop-large ****************************** */
              @include for-size(desktop-large) { 
                 width: 45%;

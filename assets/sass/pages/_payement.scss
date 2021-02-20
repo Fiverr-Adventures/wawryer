@@ -1,27 +1,28 @@
 .payement-page{
     position: relative;
     background: #FFFFFF ;
-    @include flex (center, flex-start);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     main { 
         width: 100%;
         max-width: 1440px;
-        margin: 55px 150px;
+        padding:0px 150px;
         display: flex;
         flex-direction: column;
         h1 { margin-bottom: 38px; }
         .payment {
             @include flex (space-between, flex-start);
            .pay-process {
-               // media
                 width: 65%;
                 padding: 25px 32px 69px 33px;
                 //
                 background: $pale-grey;
                 border-radius: 6px;
-                 // media
+
                 .parag1-pay { margin-bottom: 29px;}
                 .card-types {
-                    // media
+
                     width: 43%;
                     @include flex (space-between, center);
                     margin-bottom: 23px;
@@ -34,21 +35,21 @@
                         height: 42px;
                        @include flex(center, center);
                     }
-                }// media
+                }
                 .card-number { width: 55%; }
 
-                .expiry-date {  // media
+                .expiry-date {  
                     @include flex (space-between, flex-end);
                     width: 55%;
                     margin: 24px 0;
-                    & > div    { width: 45%; } // media
+                    & > div    { width: 45%; } 
                 }
-                .name-card { width: 55%;} // media
-                .security-code { // media
+                .name-card { width: 55%;} 
+                .security-code { 
                     width: 55%;
                     margin: 24px 0;
                     @include flex (space-between, flex-end);
-                    & > div    { width: 45%; } // media
+                    & > div    { width: 45%; } 
                 }
                 .form-check-input { width: 16px; height: 16px;}
                
@@ -98,14 +99,14 @@
                     .expiry-date { 
                         width: 60%;
                         margin: 18px 0;
-                        & > div    { width: 43%; } // media
+                        & > div    { width: 43%; } 
                     }
-                    .name-card { width: 60%;} // media
-                    .security-code { // media
+                    .name-card { width: 60%;} 
+                    .security-code { 
                         width: 60%;
                         margin: 18px 0;
                         @include flex (space-between, flex-end);
-                        & > div    { width: 43%; } // media
+                        & > div    { width: 43%; } 
                     }
                 }
                 .summary-payement { width: 100%; }  

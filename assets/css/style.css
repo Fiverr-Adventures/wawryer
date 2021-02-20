@@ -8447,6 +8447,46 @@ select {
   border: 1px solid #b7b6ca !important;
 }
 
+.placeholder-style::placeholder {
+  font-family: "Manrope Medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #8785a6;
+}
+
+.placeholder-style:-ms-input-placeholder {
+  font-family: "Manrope Medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #8785a6;
+}
+
+.placeholder-style:-moz-placeholder {
+  font-family: "Manrope Medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #8785a6;
+}
+
+.placeholder-style::-moz-placeholder {
+  font-family: "Manrope Medium";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  text-align: left;
+  color: #8785a6;
+}
+
 .cards .card-pick {
   width: 30%;
   background: #FFFFFF;
@@ -8600,11 +8640,17 @@ select {
 }
 
 .cards .card-option.clicked {
+  margin-top: -15px;
   border: 2px solid #0071ff;
+  box-shadow: 0px 30px 65px rgba(12, 79, 165, 0.1);
 }
 
 .cards .card-option.clicked .option-header {
+  padding: 27px 0;
   background: #0071ff;
+}
+
+.cards .card-option.clicked .option-header h3 {
   color: #FFFFFF;
 }
 
@@ -8689,6 +8735,15 @@ select {
   margin-right: 10px;
 }
 
+.optional-services .cards .card-optional.clicked {
+  background: #F4F9FF;
+  border: 2px solid #0071ff;
+}
+
+.optional-services .cards .card-optional.clicked .optional-header .optional-icon {
+  background: #0071ff;
+}
+
 @media (max-width: 1474px) {
   .optional-services .cards .card-optional {
     width: 30%;
@@ -8745,6 +8800,18 @@ select {
 .shipment-protection .cards .card-shipment .shipment-footer {
   padding: 0 16px;
   padding-bottom: 24px;
+}
+
+.shipment-protection .cards .card-shipment.clicked {
+  border: 2px solid #0071ff;
+}
+
+.shipment-protection .cards .card-shipment.clicked .shipment-header {
+  background: #0071ff;
+}
+
+.shipment-protection .cards .card-shipment.clicked .shipment-header h3 {
+  color: #ffffff;
 }
 
 @media (max-width: 1474px) {
@@ -8904,11 +8971,15 @@ select {
   align-items: center;
 }
 
-.shipment-details .card-shipment .ship-content .quantity .btn-active {
+.shipment-details .card-shipment .ship-content .quantity .btn-disabled {
   background: #575482;
 }
 
-.shipment-details .card-shipment .ship-content .quantity .btn-disabled {
+.shipment-details .card-shipment .ship-content .quantity .btn-disabled2 {
+  background: #575482;
+}
+
+.shipment-details .card-shipment .ship-content .quantity .btn-active {
   background: #0f0a4d;
 }
 
@@ -9064,6 +9135,14 @@ select {
 
 .van-cards .card-van .van-content .van-info .info-value {
   margin-bottom: 6px;
+}
+
+.van-cards .card-van.clicked {
+  border: 2px solid #0071ff;
+}
+
+.van-cards .card-van.clicked .van-content {
+  background-color: #f4f9ff;
 }
 
 @media (max-width: 992px) {
@@ -9307,12 +9386,15 @@ header .full-screen .steps .active-step a p {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .options-page main {
   width: 100%;
   max-width: 1440px;
-  margin: 55px 150px;
+  padding: 0px 150px;
   display: flex;
   flex-direction: column;
   /*******************************   tablet-landscape-down   *************************************/
@@ -9400,17 +9482,16 @@ header .full-screen .steps .active-step a p {
   position: relative;
   background: #FFFFFF;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
 }
 
 .details-v1-page main {
   width: 100%;
   max-width: 1440px;
-  margin: 55px 150px;
-  display: none;
+  padding: 0 150px;
+  display: flex;
   flex-direction: column;
-  border: 1px solid;
   /****************************** desktop-large ***************************/
 }
 
@@ -9424,7 +9505,6 @@ header .full-screen .steps .active-step a p {
   align-items: flex-start;
   border-bottom: 1px solid #b7b6ca;
   margin-bottom: 19px;
-  display: none;
 }
 
 .details-v1-page main .details .details-inputs {
@@ -9468,6 +9548,11 @@ header .full-screen .steps .active-step a p {
 
 .details-v1-page main .details .details-inputs .shipment-details .parag2 h4 {
   display: inline;
+}
+
+.details-v1-page main .details .details-inputs a {
+  color: #0f0a4d;
+  border-bottom: 1px solid #0f0a4d;
 }
 
 .details-v1-page main .details .details-inputs .pick-options-dt .ship-date {
@@ -9613,14 +9698,14 @@ header .full-screen .steps .active-step a p {
   position: relative;
   background: #FFFFFF;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center;
 }
 
 .payement-page main {
   width: 100%;
   max-width: 1440px;
-  margin: 55px 150px;
+  padding: 0px 150px;
   display: flex;
   flex-direction: column;
   /*******************************   tablet-landscape-down   *************************************/

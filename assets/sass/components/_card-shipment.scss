@@ -41,13 +41,15 @@
                     color: $white;
                     @include flex(center, center);
                 }
-                .btn-active {
-                    background: $dusk;
-                }
                 .btn-disabled {
-                    background: $dark-indigo;
+                    background: #575482;
                 }
-
+                .btn-disabled2 {
+                    background: #575482;
+                }
+                .btn-active {
+                    background: #0f0a4d;
+                }
             }
             .type-of-items  { width: 240px; }
             .weight-ship    { width: 120px; }

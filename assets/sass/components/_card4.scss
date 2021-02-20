@@ -26,6 +26,15 @@
                     }
                 }
             }
+            &.clicked {
+                background: #F4F9FF;
+                border:2px solid $bright-blue;
+                .optional-header {
+                    .optional-icon {
+                        background: $bright-blue;
+                    }
+                }
+            }
              /*****************************  desktop-large ****************************** */
              @include for-size(desktop-large) { 
                 width: 30%;

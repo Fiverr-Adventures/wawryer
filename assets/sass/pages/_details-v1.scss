@@ -1,21 +1,20 @@
 .details-v1-page {
     position: relative;
     background: #FFFFFF ;
-    @include flex (center, flex-start);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     main { 
         width: 100%;
         max-width: 1440px;
-        margin: 55px 150px;
-        // display: flex;
-        display: none;
+        padding: 0 150px;
+        display: flex;
         flex-direction: column;
         h1 { margin-bottom: 38px; }
-        border: 1px solid;
         .details {
             @include flex(space-between, flex-start);
             border-bottom: 1px solid $cloudy-blue;
-            margin-bottom: 19px;
-            display: none;     
+            margin-bottom: 19px;  
             .details-inputs {
                 width: 65%;
                 .pick-details {
@@ -37,6 +36,10 @@
                         margin: 28px 0 48px;
                         h4 {display: inline;}
                     }
+                }
+                a {
+                    color: #0f0a4d;
+                    border-bottom: 1px solid #0f0a4d;
                 }
                 .pick-options-dt {
                     .ship-date { // media
