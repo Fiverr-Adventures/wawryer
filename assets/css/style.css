@@ -9166,11 +9166,13 @@ header {
 }
 
 header .logo-button {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  position: fixed;
+  left: 0;
+  right: 0;
+  background: white;
+  z-index: 3;
+  box-shadow: 0px 4px 20px rgba(0, 66, 150, 0.1);
   width: 100%;
-  max-width: 1440px;
   padding: 18px 150px;
 }
 
@@ -9186,7 +9188,14 @@ header .logo-button {
   }
 }
 
+header .logo-button .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 header .full-screen {
+  padding-top: 90px;
   background: #e6f1ff;
   width: 100%;
   margin-bottom: 46px;
@@ -9213,13 +9222,13 @@ header .full-screen .steps .step {
   position: relative;
 }
 
-header .full-screen .steps .step a {
+header .full-screen .steps .step div {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
 }
 
-header .full-screen .steps .step a span {
+header .full-screen .steps .step div span {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9230,13 +9239,13 @@ header .full-screen .steps .step a span {
   border: 1px solid #6F6C94;
 }
 
-header .full-screen .steps .step a p {
+header .full-screen .steps .step div p {
   position: absolute;
   top: 45px;
   color: #0f0a4d;
 }
 
-header .full-screen .steps .step a .completed {
+header .full-screen .steps .step div .completed {
   white-space: nowrap;
 }
 
@@ -9246,23 +9255,23 @@ header .full-screen .steps .step .a-after {
   background-color: #6F6C94;
 }
 
-header .full-screen .steps .completed-step a span {
+header .full-screen .steps .completed-step div span {
   background: #3bb273;
   color: #ffffff;
   border-color: #3bb273;
 }
 
-header .full-screen .steps .completed-step a p {
+header .full-screen .steps .completed-step div p {
   color: #3bb273;
   font-family: "Manrope SemiBold";
 }
 
-header .full-screen .steps .active-step a span {
+header .full-screen .steps .active-step div span {
   background: #0f0a4d;
   color: #ffffff;
 }
 
-header .full-screen .steps .active-step a p {
+header .full-screen .steps .active-step div p {
   color: #0f0a4d;
   font-family: "Manrope SemiBold";
 }
@@ -9277,11 +9286,11 @@ header .full-screen .steps .active-step a p {
   header .full-screen .steps .step:not(:last-child) {
     width: 100%;
   }
-  header .full-screen .steps .step a span {
+  header .full-screen .steps .step div span {
     width: 30px;
     height: 30px;
   }
-  header .full-screen .steps .step a p:not(.active-step) {
+  header .full-screen .steps .step div p:not(.active-step) {
     display: none;
   }
 }
@@ -9303,9 +9312,10 @@ header .full-screen .steps .active-step a p {
 .about-page main {
   width: 100%;
   max-width: 1440px;
-  padding: 0px 150px;
+  padding: 0px 150px 200px;
   display: flex;
   flex-direction: column;
+  background: url("../img/backgrounds/LogoBg.svg") no-repeat center;
   /*******************************   tablet-landscape-down   *************************************/
 }
 
@@ -9370,13 +9380,13 @@ header .full-screen .steps .active-step a p {
 
 @media (max-width: 768px) {
   .about-page main {
-    padding: 0 80px;
+    padding: 0 80px 100px;
   }
 }
 
 @media (max-width: 576px) {
   .about-page main {
-    padding: 0 20px;
+    padding: 0 20px 70px;
   }
 }
 
