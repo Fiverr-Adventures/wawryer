@@ -8,9 +8,10 @@
     main { 
         width: 100%;
         max-width: 1440px;
-        padding: 0px 150px;
+        padding: 0px 150px 200px;
         display: flex;
         flex-direction: column;
+        background: url("../img/backgrounds/LogoBg.svg") no-repeat center;
         .pick-options {
             h1 { margin-bottom: 54px; }
             margin-bottom: 55px;
@@ -60,10 +61,10 @@
             }
         }
         @include for-size(tablet-portrait-down) {
-            padding: 0 80px;
+            padding: 0 80px 100px;
         }
         @include for-size(phone-only) {
-            padding: 0 20px;
+            padding: 0 20px 70px;
         }
     }
 }

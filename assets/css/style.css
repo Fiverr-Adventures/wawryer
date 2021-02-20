@@ -9404,9 +9404,10 @@ header .full-screen .steps .active-step div p {
 .options-page main {
   width: 100%;
   max-width: 1440px;
-  padding: 0px 150px;
+  padding: 0px 150px 200px;
   display: flex;
   flex-direction: column;
+  background: url("../img/backgrounds/LogoBg.svg") no-repeat center;
   /*******************************   tablet-landscape-down   *************************************/
 }
 
@@ -9478,13 +9479,13 @@ header .full-screen .steps .active-step div p {
 
 @media (max-width: 768px) {
   .options-page main {
-    padding: 0 80px;
+    padding: 0 80px 100px;
   }
 }
 
 @media (max-width: 576px) {
   .options-page main {
-    padding: 0 20px;
+    padding: 0 20px 70px;
   }
 }
 
@@ -9499,7 +9500,7 @@ header .full-screen .steps .active-step div p {
 .details-v1-page main {
   width: 100%;
   max-width: 1440px;
-  padding: 0 150px;
+  padding: 0 150px 200px;
   display: flex;
   flex-direction: column;
   /****************************** desktop-large ***************************/
@@ -9630,7 +9631,7 @@ header .full-screen .steps .active-step div p {
 
 @media (max-width: 768px) {
   .details-v1-page main {
-    padding: 0 80px;
+    padding: 0 80px 100px;
   }
   .details-v1-page main .details {
     flex-direction: column;
@@ -9675,7 +9676,7 @@ header .full-screen .steps .active-step div p {
 
 @media (max-width: 576px) {
   .details-v1-page main {
-    padding: 0 20px;
+    padding: 0 20px 70px;
   }
 }
 

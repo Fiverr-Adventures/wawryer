@@ -7,7 +7,7 @@
     main { 
         width: 100%;
         max-width: 1440px;
-        padding: 0 150px;
+        padding: 0 150px 200px;
         display: flex;
         flex-direction: column;
         h1 { margin-bottom: 38px; }
@@ -90,7 +90,7 @@
             .details {.summary-detail { width: 100%;}  }  
         }
         @include for-size(tablet-portrait-down) {
-            padding: 0 80px;
+            padding: 0 80px 100px;
             .details {
                 flex-direction: column;
                 .details-inputs {
@@ -123,7 +123,8 @@
             .pay-now{ margin-top: 11px;}
         }
         @include for-size(phone-only) {
-            padding: 0 20px;
+            padding: 0 20px 70px;
         }
     }
 }
+ 
