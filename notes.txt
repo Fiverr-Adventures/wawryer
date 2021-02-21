@@ -1,6 +1,0 @@
-fix height of cards
-about ===> card ===> checkbox
-// fix placeholder size and font
-// form in details page
-// ayya h1 7aydi lih border top
-zidi l bg l about
